@@ -341,13 +341,83 @@ body {
   border: 1px solid;
 }
 
+/* ====== Intensity Bar ====== */
+.intensity-bar {
+  margin: 0.75rem 1.25rem 0;
+  padding: 8px 12px;
+  background: var(--bg-elevated);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.intensity-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.intensity-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: all 0.2s;
+}
+
+.intensity-dot.active {
+  transform: scale(1.1);
+}
+
+.intensity-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+/* ====== Exercise Progress ====== */
+.exercise-progress {
+  margin: 0.5rem 1.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.exercise-progress-bar {
+  flex: 1;
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.exercise-progress-fill {
+  height: 100%;
+  background: var(--success);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 6px rgba(0, 230, 118, 0.4);
+}
+
+.exercise-progress-text {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
 /* ====== Exercise Cards ====== */
 .workout-exercises {
-  padding: 1rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  max-height: 420px;
+  max-height: 500px;
   overflow-y: auto;
 }
 
@@ -356,11 +426,20 @@ body {
   border-radius: 10px;
   padding: 10px 12px;
   border: 1px solid var(--border);
-  transition: border-color 0.15s;
+  transition: all 0.15s;
 }
 
-.exercise-card:hover {
+.exercise-card.checkable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.exercise-card.checkable:hover {
   border-color: var(--border-light);
+}
+
+.exercise-card.checkable:active {
+  transform: scale(0.98);
 }
 
 .exercise-card.is-highlight {
@@ -368,19 +447,81 @@ body {
   background: var(--accent-dim);
 }
 
+.exercise-card.is-checked {
+  opacity: 0.5;
+  border-color: var(--success);
+  background: var(--success-dim);
+}
+
+.exercise-card.is-checked .exercise-name {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+/* Checkbox */
+.exercise-top-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.exercise-checkbox {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  border-radius: 4px;
+  border: 2px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.exercise-checkbox.checked {
+  background: var(--success);
+  border-color: var(--success);
+  box-shadow: 0 0 8px rgba(0, 230, 118, 0.4);
+}
+
+.exercise-checkbox.checked svg {
+  color: #000;
+}
+
 .exercise-name {
   font-size: 0.82rem;
   font-weight: 600;
-  margin-bottom: 6px;
   display: flex;
   align-items: center;
   gap: 6px;
   color: var(--text);
+  transition: all 0.15s;
 }
 
 .exercise-name .fire {
   color: var(--accent);
   font-size: 0.75rem;
+}
+
+/* Treadmill card */
+.treadmill-card {
+  background: rgba(0, 230, 118, 0.06);
+  border-color: rgba(0, 230, 118, 0.2);
+}
+
+.metric.treadmill .metric-label {
+  color: var(--type-run);
+}
+
+.metric.treadmill .metric-value {
+  color: var(--success);
+  font-weight: 700;
+}
+
+/* BW badge */
+.metric.bw .metric-value {
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 .exercise-metrics {
