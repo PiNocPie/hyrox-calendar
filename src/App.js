@@ -3,24 +3,27 @@ import { ChevronLeft, ChevronRight, Calendar, Dumbbell, Trophy, Check, Flame } f
 import { workouts, getWorkoutColor, thaiMonths, thaiDays, thaiDaysShort, monthlyGoals, weeklyProgression } from './workoutData';
 import './App.css';
 
-// Derive workout intensity from type + content
+// Derive workout intensity from type + title + content
 function getIntensity(workout) {
   if (!workout) return null;
-  const { type, content } = workout;
+  const { type, title, content } = workout;
   if (type === 'rest') return { level: 'REST', label: 'พักผ่อน', color: 'var(--type-rest)' };
   if (type === 'recovery') return { level: 'LIGHT', label: 'เบา — ฟื้นตัว', color: 'var(--type-recovery)' };
   if (type === 'race') return { level: 'MAX', label: 'แข่ง — สุดตัว!', color: 'var(--type-race)' };
 
-  const hasSimulation = /simulation|sim/i.test(content);
-  const hasPeak = /PEAK|MILESTONE|TARGET/i.test(content);
-  const hasLight = /light|easy|recovery|shakeout|activation/i.test(content);
-  const hasTaper = /taper|light!/i.test(content);
-  const hasInterval = /interval|race pace|sub-2/i.test(content);
+  // Check title (more reliable than content for simulation)
+  const titleHasSim = /simulation/i.test(title);
+  const hasPeak = /PEAK|MILESTONE|TARGET/i.test(title) || /PEAK|MILESTONE|TARGET/i.test(content);
+  const hasLight = /^(light|easy|recovery|shakeout)/i.test(title);
+  const hasTaper = /taper/i.test(title);
+  const hasInterval = /interval/i.test(title);
+  const isZone2 = /zone 2/i.test(title);
 
-  if (hasSimulation) return { level: 'MAX', label: 'หนักมาก — Simulation', color: 'var(--type-race)' };
+  if (titleHasSim) return { level: 'MAX', label: 'หนักมาก — Simulation', color: 'var(--type-race)' };
   if (hasPeak) return { level: 'HEAVY', label: 'หนัก — Peak/Target', color: '#ff9100' };
   if (hasInterval) return { level: 'HARD', label: 'หนัก — Intervals', color: '#ff9100' };
-  if (hasLight || hasTaper) return { level: 'LIGHT', label: 'เบา — Recovery', color: 'var(--type-recovery)' };
+  if (hasLight || hasTaper) return { level: 'LIGHT', label: 'เบา — Taper/Recovery', color: 'var(--type-recovery)' };
+  if (isZone2) return { level: 'MODERATE', label: 'ปานกลาง — Zone 2', color: 'var(--type-run)' };
   if (type === 'nogym') return { level: 'MODERATE', label: 'ปานกลาง — No Gym', color: 'var(--type-nogym)' };
   if (type === 'strength') return { level: 'MODERATE', label: 'ปานกลาง — Strength', color: 'var(--type-strength)' };
   if (type === 'run') return { level: 'MODERATE', label: 'ปานกลาง — Run', color: 'var(--type-run)' };
