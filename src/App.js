@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { ChevronLeft, ChevronRight, Calendar, Dumbbell, Trophy, Check, Flame, Timer, Weight, Ruler, Zap } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Calendar, Dumbbell, Trophy, Check, Flame } from 'lucide-react';
 import { workouts, getWorkoutColor, thaiMonths, thaiDays, thaiDaysShort } from './workoutData';
 import './App.css';
 
@@ -163,7 +163,7 @@ function parseExerciseLine(line) {
   }
 
   // Pattern: lines starting with bullet • or number
-  const bulletPattern = /^[•·\-]\s*(.+)$/;
+  const bulletPattern = /^[•·-]\s*(.+)$/;
   const bulletMatch = cleanLine.match(bulletPattern);
   if (bulletMatch) {
     // Try to parse bullet content for exercise
