@@ -36,8 +36,8 @@ function parseExerciseLine(line, index) {
   const isHighlight = trimmed.includes('🔥') || trimmed.includes('PEAK') || trimmed.includes('MILESTONE') || trimmed.includes('TARGET');
   const cleanLine = trimmed.replace(/[🔥💪🏆🛌🏠🎯🎉]/g, '').trim();
 
-  // Pattern: "Exercise Name: SETSxREPS @ WEIGHTkg"
-  const fullPattern = /^(.+?):\s*(\d+)x(\d+(?:-\d+)?)\s*@\s*([\d.]+)\s*kg/i;
+  // Pattern: "Exercise Name: SETSxREPS @ WEIGHTkg" (with or without colon)
+  const fullPattern = /^(.+?)[:\s]\s*(\d+)x(\d+(?:-\d+)?)\s*@\s*([\d.]+)\s*kg/i;
   const fullMatch = cleanLine.match(fullPattern);
   if (fullMatch) {
     return { type: 'exercise', id: index, name: fullMatch[1].trim(), sets: fullMatch[2], reps: fullMatch[3], weight: fullMatch[4] + 'kg', isHighlight };
@@ -58,7 +58,7 @@ function parseExerciseLine(line, index) {
   }
 
   // Pattern: "Exercise: SETSxREPS BW" or "Exercise: SETSxREPS" (no weight → show BW)
-  const setsRepsPattern = /^(.+?):\s*(\d+)x(\d+(?:-\d+|\/leg|\/side)?)\s*(?:BW)?$/i;
+  const setsRepsPattern = /^(.+?):\s*(\d+)x(\d+(?:s|-\d+|\/leg|\/side)?)\s*(?:BW)?$/i;
   const setsRepsMatch = cleanLine.match(setsRepsPattern);
   if (setsRepsMatch) {
     return { type: 'exercise', id: index, name: setsRepsMatch[1].trim(), sets: setsRepsMatch[2], reps: setsRepsMatch[3], weight: 'BW', isHighlight };
