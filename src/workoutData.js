@@ -9,23 +9,23 @@ export const workouts = {
   '2026-03-22': { type: 'rest', title: 'REST 🛌', badge: 'Recovery', content: 'วันพัก — นอนให้พอ กินให้ดี' },
   '2026-03-23': { type: 'recovery', title: 'Mobility & Recovery', badge: '30-45 min', content: 'Walk: 20-30 min\nFoam Roll: Quads, Hamstrings, Calves, Lats (2 min/ข้าง)\nStretch: Hip 90/90, Pigeon, Cat-Cow' },
   '2026-03-24': { type: 'strength', title: 'Upper Day (Full) 💪', badge: '60-75 min', content: 'Seated Row: 4x10 @ 35kg 🔥\nLat Pulldown: 4x10 @ 45kg\nChest Press: 4x10 @ 45kg\nFace Pull: 3x15 @ 15kg\nCable Lateral Raise: 3x12 @ 5kg\nRope Tricep Pushdown: 3x12 @ 20kg\nCable Curl: 3x12 @ 15kg\nBack Extension: 3x12 BW' },
-  '2026-03-25': { type: 'run', title: 'Zone 2 Run', badge: '30-40 min', content: 'Pace: 7:00-7:30 /km\nTreadmill: 8.0-8.5 km/h\nHR: 130-145 bpm\nFeel: พูดได้เต็มประโยค\n\nCool-down + Static Stretch 10 min' },
-  '2026-03-26': { type: 'strength', title: 'Lower Day', badge: '60-75 min', content: 'Leg Press: 4x10 @ 100kg\nLeg Curl: 3x12 @ 40kg\nLeg Extension: 3x12 @ 40kg\nHip Thrust: 3x12 @ 60kg\nCalf Raise: 3x15 @ 60kg\nWalking Lunges: 2x10/leg @ 30kg\n\nถ้าขายังไม่พร้อม → ทำ Upper แทน' },
+  '2026-03-25': { type: 'run', title: 'Zone 2 Run', badge: '35-45 min', content: 'Pace: 7:00-7:30 /km\nTreadmill: 8.0-8.5 km/h\nHR: 130-145 bpm\nFeel: พูดได้เต็มประโยค\n\nCool-down + Static Stretch 10 min' },
+  '2026-03-26': { type: 'strength', title: 'Lower Day', badge: '60-75 min', content: 'Leg Press: 4x10 @ 100kg\nLeg Curl: 3x12 @ 40kg\nLeg Extension: 3x12 @ 40kg\nHip Thrust: 3x12 @ 60kg\nCalf Raise: 3x15 @ 60kg\nWalking Lunges: 2x10/leg @ 30kg\n\nถ้าขายังไม่พร้อม → ทำ Upper แทน\n\nFinisher:\nWall Balls: 2x15 @ 9kg' },
   '2026-03-27': { type: 'mixed', title: 'Run + Upper', badge: '60-75 min', content: 'Zone 2 Run: 25-30 min\n\nUpper:\nLat Pulldown 3x10 @ 45kg\nSeated Row 3x10 @ 35kg\nChest Press 3x10 @ 45kg\nFace Pull 3x12 @ 15kg' },
-  '2026-03-28': { type: 'run', title: 'Long Run', badge: '45-60 min', content: 'Zone 2: 45-60 min\nPace: 7:00-7:30 /km\nTreadmill: 8.0-8.5 km/h\nHR: 130-145 bpm\n\nCool-down + Foam Roll 10 min' },
+  '2026-03-28': { type: 'run', title: 'Long Run', badge: '50-65 min', content: 'Zone 2: 50-65 min\nPace: 7:00-7:30 /km\nTreadmill: 8.0-8.5 km/h\nHR: 130-145 bpm\n\nCool-down + Foam Roll 10 min' },
   '2026-03-29': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี\nMobility, Stretch ถ้าอยาก' },
-  '2026-03-30': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 37.5kg 🔥\nLat Pulldown: 4x10 @ 47.5kg\nBack Extension: 3x12 BW\nFace Pull: 3x15 @ 15kg\nDead Hang: 3x max BW' },
-  '2026-03-31': { type: 'run', title: 'Zone 2 Run + Upper', badge: '60-70 min', content: 'Zone 2 Run: 40 min\nTreadmill: 8.0-8.5 km/h\n\nUpper:\nChest Press: 3x10 @ 45kg\nRope Tricep Pushdown: 3x12 @ 20kg\nCable Curl: 3x12 @ 15kg' },
+  '2026-03-30': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 37.5kg 🔥\nLat Pulldown: 4x10 @ 47.5kg\nBack Extension: 3x12 BW\nFace Pull: 3x15 @ 15kg\nDead Hang: 3x max BW\n\nFinisher:\nWall Balls: 2x15 @ 9kg' },
+  '2026-03-31': { type: 'run', title: 'Zone 2 Run + Upper', badge: '60-70 min', content: 'Zone 2 Run: 45 min\nTreadmill: 8.0-8.5 km/h\n\nUpper:\nChest Press: 3x10 @ 45kg\nRope Tricep Pushdown: 3x12 @ 20kg\nCable Curl: 3x12 @ 15kg' },
 
   // ===== APRIL 2026 =====
   // Week 2-3: Base Building
-  '2026-04-01': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x10 @ 47.5kg\nHip Thrust: 4x10 @ 65kg\nLeg Curl: 3x12 @ 42.5kg\nWalking Lunges: 3x12/leg @ 30kg' },
+  '2026-04-01': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x10 @ 47.5kg\nHip Thrust: 4x10 @ 65kg\nLeg Curl: 3x12 @ 42.5kg\nWalking Lunges: 3x12/leg @ 30kg\n\nFinisher:\nWall Balls: 3x15 @ 9kg' },
   '2026-04-02': { type: 'run', title: 'Running Intervals', badge: '50-60 min', content: 'Warm-up: 10 min easy\nIntervals: 6x 400m @ race pace\nTreadmill: 9.5-10.0 km/h\nRest: 90s between\nCool-down: 10 min' },
   '2026-04-03': { type: 'strength', title: 'Strength - Mixed', badge: '60-75 min', content: 'Sled Push/Pull: 5x25m\nFarmer Carry: 3x50m @ 24kg/hand\nBurpees: 3x15 BW → Run 400m\nChest Press: 3x10 @ 47.5kg\nCable Curl: 3x12 @ 15kg' },
   '2026-04-04': { type: 'run', title: 'Long Run', badge: '60-75 min', content: 'Zone 2: 60-75 min\nPace: 7:00-7:30 /km\nTreadmill: 8.0-8.5 km/h' },
   '2026-04-05': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
-  '2026-04-06': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 40kg 🔥\nLat Pulldown: 4x10 @ 50kg\nBack Extension: 3x12 + 5kg\nFace Pull: 3x15 @ 15kg' },
-  '2026-04-07': { type: 'run', title: 'Zone 2 Run + Upper', badge: '60-70 min', content: 'Zone 2 Run: 40 min\nTreadmill: 8.0-8.5 km/h\n\nUpper:\nChest Press: 4x10 @ 50kg\nRope Tricep Pushdown: 3x12 @ 20kg\nCable Curl: 3x12 @ 15kg' },
+  '2026-04-06': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 40kg 🔥\nLat Pulldown: 4x10 @ 50kg\nBack Extension: 3x12 + 5kg\nFace Pull: 3x15 @ 15kg\n\nFinisher:\nWall Balls: 3x15 @ 9kg' },
+  '2026-04-07': { type: 'run', title: 'Zone 2 Run + Upper', badge: '60-70 min', content: 'Zone 2 Run: 45 min\nTreadmill: 8.0-8.5 km/h\n\nUpper:\nChest Press: 4x10 @ 50kg\nRope Tricep Pushdown: 3x12 @ 20kg\nCable Curl: 3x12 @ 15kg' },
 
   // No Gym Week: 8-12 April
   '2026-04-08': { type: 'nogym', title: '🏠 Home: Run + Pull', badge: 'No Gym', content: 'Zone 2 Run: 40 min outdoor\nPull-ups: 4x8-10 BW\nDead Hang: 3x max BW\nPlank: 3x45s BW' },
@@ -36,45 +36,45 @@ export const workouts = {
   '2026-04-12': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 
   // Week 4: Build Phase
-  '2026-04-14': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 42.5kg 🔥\nLat Pulldown: 4x10 @ 52.5kg\nBack Extension: 3x12 + 7.5kg\nSandbag Carry: 3x25m @ 20kg' },
-  '2026-04-15': { type: 'run', title: 'Zone 2 Run + Burden Run', badge: '60-70 min', content: 'Zone 2 Run: 30 min\nBurden Run practice: 20kg backpack x 200m x 3' },
-  '2026-04-16': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x10 @ 50kg\nLeg Press: 4x10 @ 110kg\nHip Thrust: 4x10 @ 70kg\nLunges: 100m @ 30kg → Run 800m (cramp prevention drill)' },
+  '2026-04-14': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 42.5kg 🔥\nLat Pulldown: 4x10 @ 52.5kg\nBack Extension: 3x12 + 7.5kg\nSandbag Carry: 3x25m @ 20kg\n\nFinisher:\nWall Balls: 3x20 @ 9kg' },
+  '2026-04-15': { type: 'run', title: 'Zone 2 Run + Burden Run', badge: '60-70 min', content: 'Zone 2 Run: 35 min\nBurden Run practice: 20kg backpack x 200m x 3' },
+  '2026-04-16': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x10 @ 50kg\nLeg Press: 4x10 @ 110kg\nHip Thrust: 4x10 @ 70kg\nLunges: 100m @ 30kg → Run 800m (cramp prevention drill)\n\nFinisher:\nWall Balls: 3x20 @ 9kg' },
   '2026-04-17': { type: 'run', title: 'Running Intervals', badge: '50-60 min', content: 'Warm-up: 10 min\nIntervals: 7x 400m @ race pace\nTreadmill: 9.5-10.0 km/h\nRest: 90s\nCool-down: 10 min' },
   '2026-04-18': { type: 'strength', title: 'Strength - Mixed + Crucible', badge: '60-75 min', content: 'Sled Push/Pull: 6x25m\nFarmer Carry: 4x50m @ 26kg/hand\nRope Lat Pulldown (Hoist sub): 4x10 @ 55kg\nHeavy Sled Pull (Haul sub): 3x50m' },
   '2026-04-20': { type: 'run', title: 'Long Run', badge: '70-80 min', content: 'Zone 2: 70-80 min\nPace: 6:45-7:15 /km\nTreadmill: 8.5-9.0 km/h\nBuilding endurance!' },
   '2026-04-19': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 
   // Week 5: Build Phase
-  '2026-04-21': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 45kg 🔥\nLat Pulldown: 4x10 @ 55kg\nBack Extension: 3x12 + 10kg\nHeavy Sled Pull: 3x40m' },
-  '2026-04-22': { type: 'run', title: 'Zone 2 Run + Upper', badge: '60-70 min', content: 'Zone 2 Run: 40 min\nTreadmill: 8.0-8.5 km/h\n\nUpper:\nChest Press: 3x10 @ 52.5kg\nFace Pull: 3x15 @ 15kg\nRope Tricep Pushdown: 3x12 @ 22.5kg\nCable Curl: 3x12 @ 15kg' },
-  '2026-04-23': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x10 @ 52.5kg\nHip Thrust: 4x10 @ 75kg\nLeg Curl: 3x12 @ 45kg\nLunges: 3x12/leg @ 30kg\nBurpees 40 → Run 800m (cramp drill)' },
+  '2026-04-21': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 45kg 🔥\nLat Pulldown: 4x10 @ 55kg\nBack Extension: 3x12 + 10kg\nHeavy Sled Pull: 3x40m\n\nFinisher:\nWall Balls: 3x20 @ 9kg' },
+  '2026-04-22': { type: 'run', title: 'Zone 2 Run + Upper', badge: '60-70 min', content: 'Zone 2 Run: 45 min\nTreadmill: 8.0-8.5 km/h\n\nUpper:\nChest Press: 3x10 @ 52.5kg\nFace Pull: 3x15 @ 15kg\nRope Tricep Pushdown: 3x12 @ 22.5kg\nCable Curl: 3x12 @ 15kg' },
+  '2026-04-23': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x10 @ 52.5kg\nHip Thrust: 4x10 @ 75kg\nLeg Curl: 3x12 @ 45kg\nLunges: 3x12/leg @ 30kg\nBurpees 40 → Run 800m (cramp drill)\n\nFinisher:\nWall Balls: 3x25 @ 9kg' },
   '2026-04-24': { type: 'run', title: 'Running Intervals', badge: '50-60 min', content: 'Warm-up: 10 min\nIntervals: 8x 400m @ race pace\nTreadmill: 9.5-10.0 km/h\nRest: 75s (decreasing)\nCool-down: 10 min' },
   '2026-04-25': { type: 'strength', title: 'Strength - Mixed + Crucible', badge: '70-80 min', content: 'Sled Push/Pull: 60m (race distance)\nFarmer Carry: 4x50m @ 28kg/hand\nBurden Run: 20kg x 400m (full distance!)\nHeavy Sled Pull: 4x40m' },
   '2026-04-27': { type: 'run', title: 'Long Run', badge: '75-90 min', content: 'Zone 2: 75-90 min\nPace: 6:45-7:15 /km\nTreadmill: 8.5-9.0 km/h' },
   '2026-04-26': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 
   // Week 6: Race Simulation
-  '2026-04-28': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 47.5kg 🔥\nLat Pulldown: 4x10 @ 57.5kg\nBack Extension: 3x12 + 12.5kg' },
-  '2026-04-29': { type: 'run', title: 'Zone 2 Run', badge: '40-50 min', content: 'Zone 2 Run: 40-50 min\nEasy day before simulation' },
+  '2026-04-28': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 47.5kg 🔥\nLat Pulldown: 4x10 @ 57.5kg\nBack Extension: 3x12 + 12.5kg\n\nFinisher:\nWall Balls: 3x25 @ 9kg' },
+  '2026-04-29': { type: 'run', title: 'Zone 2 Run', badge: '45-55 min', content: 'Zone 2 Run: 45-55 min\nEasy day before simulation' },
   '2026-04-30': { type: 'mixed', title: 'Crucible Simulation 50%', badge: '60-75 min', content: '50% Simulation:\nRun 300m → Row 20cal → Ski 20cal\nSeated Row heavy: 4x8 @ 50kg (Erg sub)\nSandbag Carry: 3x25m @ 20kg\nRope Lat Pulldown: 4x10 @ 55kg (Hoist sub)\nBurpees: 20 BW → Burden Run 200m\nSled Push: 3x25m → Heavy Sled Pull: 3x25m' },
 
   // ===== MAY 2026 =====
   '2026-05-01': { type: 'run', title: 'Recovery Run', badge: '30-40 min', content: 'Easy Zone 2: 30-40 min\nRecovering from simulation' },
-  '2026-05-02': { type: 'strength', title: 'Strength - Mixed', badge: '60-75 min', content: 'Full body maintenance:\nSled Push/Pull: 4x30m\nFarmer Carry: 3x50m @ 28kg/hand\nChest Press: 3x10 @ 52.5kg\nSeated Row: 3x10 @ 45kg' },
+  '2026-05-02': { type: 'strength', title: 'Strength - Mixed', badge: '60-75 min', content: 'Full body maintenance:\nSled Push/Pull: 4x30m\nFarmer Carry: 3x50m @ 28kg/hand\nChest Press: 3x10 @ 52.5kg\nSeated Row: 3x10 @ 45kg\n\nFinisher:\nWall Balls: 3x20 @ 9kg' },
   '2026-05-04': { type: 'run', title: 'Long Run', badge: '70-80 min', content: 'Zone 2: 70-80 min\nPace: 6:45-7:15 /km\nTreadmill: 8.5-9.0 km/h' },
   '2026-05-03': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 
   // Week 7: Peak Week
-  '2026-05-05': { type: 'strength', title: 'Strength - Pull PEAK', badge: '60-75 min', content: 'Seated Row: 4x8 @ 50kg 🔥 PEAK\nLat Pulldown: 4x8 @ 60kg\nBack Extension: 3x10 + 15kg\nHeavy but controlled' },
-  '2026-05-06': { type: 'run', title: 'Zone 2 Run + Upper', badge: '60-70 min', content: 'Zone 2 Run: 35 min\nTreadmill: 8.0-8.5 km/h\n\nUpper:\nChest Press: 4x8 @ 55kg\nRope Tricep Pushdown: 3x12 @ 22.5kg\nCable Curl: 3x12 @ 17.5kg' },
-  '2026-05-07': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x8 @ 55kg\nHip Thrust: 4x8 @ 80kg\nLeg Curl: 3x10 @ 47.5kg' },
+  '2026-05-05': { type: 'strength', title: 'Strength - Pull PEAK', badge: '60-75 min', content: 'Seated Row: 4x8 @ 50kg 🔥 PEAK\nLat Pulldown: 4x8 @ 60kg\nBack Extension: 3x10 + 15kg\nHeavy but controlled\n\nFinisher:\nWall Balls: 3x20 @ 9kg' },
+  '2026-05-06': { type: 'run', title: 'Zone 2 Run + Upper', badge: '60-70 min', content: 'Zone 2 Run: 40 min\nTreadmill: 8.0-8.5 km/h\n\nUpper:\nChest Press: 4x8 @ 55kg\nRope Tricep Pushdown: 3x12 @ 22.5kg\nCable Curl: 3x12 @ 17.5kg' },
+  '2026-05-07': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x8 @ 55kg\nHip Thrust: 4x8 @ 80kg\nLeg Curl: 3x10 @ 47.5kg\n\nFinisher:\nWall Balls: 3x15 @ 9kg' },
   '2026-05-08': { type: 'run', title: 'Intervals - Sharpening', badge: '45-50 min', content: 'Warm-up: 10 min\nIntervals: 6x 400m @ slightly faster than race pace\nRest: 90s\nStay sharp!' },
   '2026-05-09': { type: 'mixed', title: 'Crucible Simulation 80%', badge: '75-90 min', content: '80% Full Simulation:\nRun 500m → Row 35cal → Ski 35cal\nSeated Row heavy: 4x6 @ 55kg (Erg sub)\nSandbag Carry: 4x25m @ 20kg\nRope Lat Pulldown: 4x8 @ 60kg (Hoist sub)\nBurpees: 35 BW → Burden Run 350m\nLactic Legs: 15 squat + 15m lunge @ 30kg\nSled Push: 4x25m → Heavy Sled Pull: 4x30m' },
   '2026-05-11': { type: 'run', title: 'Easy Run', badge: '30-40 min', content: 'Recovery run after simulation\nZone 2: 30-40 min' },
   '2026-05-10': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 
   // Week 8: Taper
-  '2026-05-12': { type: 'strength', title: 'Light Strength - Pull', badge: '45-50 min', content: 'Seated Row: 3x8 @ 40kg (light!)\nLat Pulldown: 3x8 @ 50kg\nBack Extension: 2x10 BW\nStay loose, don\'t push' },
+  '2026-05-12': { type: 'strength', title: 'Light Strength - Pull', badge: '45-50 min', content: 'Seated Row: 3x8 @ 40kg (light!)\nLat Pulldown: 3x8 @ 50kg\nBack Extension: 2x10 BW\nStay loose, don\'t push\n\nFinisher:\nWall Balls: 2x15 @ 9kg' },
   '2026-05-13': { type: 'run', title: 'Easy Run', badge: '30 min', content: 'Zone 2: 30 min\nLegs fresh' },
   '2026-05-14': { type: 'strength', title: 'Light Strength - Push', badge: '45-50 min', content: 'Chest Press: 3x8 @ 45kg\nHip Thrust: 3x8 @ 60kg\nMobility work' },
   '2026-05-15': { type: 'run', title: 'Short Intervals', badge: '35-40 min', content: 'Warm-up: 10 min\nIntervals: 4x 200m @ race pace\nRest: 90s\nStay sharp but fresh!' },
