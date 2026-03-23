@@ -200,15 +200,15 @@ export const workouts = {
 // Generate the color based on type
 export const getWorkoutColor = (type) => {
   const colors = {
-    race: '#E24B4A',
-    strength: '#7F77DD',
-    run: '#1D9E75',
-    rest: '#888780',
-    nogym: '#D85A30',
-    mixed: '#378ADD',
-    recovery: '#5DCAA5',
+    race: '#ff3a3a',
+    strength: '#b388ff',
+    run: '#00e676',
+    rest: '#555',
+    nogym: '#ff9100',
+    mixed: '#448aff',
+    recovery: '#4dd0e1',
   };
-  return colors[type] || '#888780';
+  return colors[type] || '#555';
 };
 
 // Thai month names
