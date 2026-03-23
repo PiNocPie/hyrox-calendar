@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, Calendar, Dumbbell, Trophy, Check, Flame } from 'lucide-react';
-import { workouts, getWorkoutColor, thaiMonths, thaiDays, thaiDaysShort } from './workoutData';
+import { workouts, getWorkoutColor, thaiMonths, thaiDays, thaiDaysShort, monthlyGoals, weeklyProgression } from './workoutData';
 import './App.css';
 
 // Derive workout intensity from type + content
@@ -394,6 +394,67 @@ function App() {
                 {label}
               </div>
             ))}
+          </div>
+
+          {/* Monthly Goals */}
+          {monthlyGoals[currentDate.getMonth()] && (
+            <div className="monthly-goals">
+              <div className="monthly-goals-header">
+                <h3>{monthlyGoals[currentDate.getMonth()].title}</h3>
+              </div>
+              <div className="monthly-goals-list">
+                {monthlyGoals[currentDate.getMonth()].goals.map((g, i) => (
+                  <div key={i} className={`goal-item ${g.done ? 'done' : ''}`}>
+                    <span className="goal-bullet">{g.done ? '✓' : '○'}</span>
+                    <span>{g.text}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="monthly-lifts">
+                <h4>Key Lifts This Month</h4>
+                <div className="lifts-grid">
+                  {Object.entries(monthlyGoals[currentDate.getMonth()].keyLifts).map(([name, val]) => (
+                    <div key={name} className="lift-item">
+                      <span className="lift-name">{name}</span>
+                      <span className="lift-value">{val}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Weekly Weight Progression */}
+          <div className="weekly-progression">
+            <h4>Weight Progression</h4>
+            <div className="progression-table">
+              <div className="progression-header">
+                <span className="prog-week">Week</span>
+                <span className="prog-lift">Row</span>
+                <span className="prog-lift">Lat</span>
+                <span className="prog-lift">Chest</span>
+                <span className="prog-lift">Hip</span>
+              </div>
+              {weeklyProgression.map((w, i) => {
+                const prev = i > 0 ? weeklyProgression[i - 1] : null;
+                const rowUp = prev && w.row && prev.row && w.row > prev.row;
+                const latUp = prev && w.lat && prev.lat && w.lat > prev.lat;
+                const chestUp = prev && w.chest && prev.chest && w.chest > prev.chest;
+                const hipUp = prev && w.hip && prev.hip && w.hip > prev.hip;
+                return (
+                  <div key={i} className={`progression-row ${w.note ? 'has-note' : ''}`}>
+                    <span className="prog-week">
+                      {w.week}
+                      {w.note && <span className="prog-note">{w.note}</span>}
+                    </span>
+                    <span className={`prog-lift ${rowUp ? 'up' : ''}`}>{w.row || '—'}</span>
+                    <span className={`prog-lift ${latUp ? 'up' : ''}`}>{w.lat || '—'}</span>
+                    <span className={`prog-lift ${chestUp ? 'up' : ''}`}>{w.chest || '—'}</span>
+                    <span className={`prog-lift ${hipUp ? 'up' : ''}`}>{w.hip || '—'}</span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
 

@@ -197,6 +197,96 @@ export const workouts = {
   '2026-08-16': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 };
 
+// Monthly goals
+export const monthlyGoals = {
+  2: { // March (index 2)
+    title: 'Recovery & Base',
+    goals: [
+      { text: 'ฟื้นตัวหลัง Hyrox (2:28)', done: true },
+      { text: 'Seated Row กลับมา 37.5kg', done: false },
+      { text: 'Zone 2 Run 45-60 min สบาย', done: false },
+    ],
+    keyLifts: { 'Seated Row': '35→37.5kg', 'Lat Pulldown': '45→47.5kg', 'Chest Press': '45kg', 'Hip Thrust': '60kg' },
+  },
+  3: { // April
+    title: 'Base Building + Crucible Prep',
+    goals: [
+      { text: 'Seated Row ถึง 47.5kg', done: false },
+      { text: 'Long Run 75-90 min', done: false },
+      { text: 'Crucible Simulation 50%', done: false },
+      { text: 'Farmer Carry 28kg/hand', done: false },
+    ],
+    keyLifts: { 'Seated Row': '40→47.5kg', 'Lat Pulldown': '50→57.5kg', 'Chest Press': '47.5→52.5kg', 'Hip Thrust': '65→75kg' },
+  },
+  4: { // May
+    title: 'Peak + Crucible Race',
+    goals: [
+      { text: 'Seated Row PEAK 50kg', done: false },
+      { text: 'Crucible Simulation 80%', done: false },
+      { text: '🔥 Crucible Race 23 พ.ค.', done: false },
+      { text: 'Taper week ไม่ push เกิน', done: false },
+    ],
+    keyLifts: { 'Seated Row': '50kg PEAK', 'Lat Pulldown': '60kg', 'Chest Press': '55kg', 'Hip Thrust': '80kg' },
+  },
+  5: { // June
+    title: 'Hyrox Focus — Build Phase',
+    goals: [
+      { text: 'Seated Row ถึง 55kg MILESTONE', done: false },
+      { text: 'Hip Thrust ถึง 100kg', done: false },
+      { text: 'Long Run 90 min (Hyrox distance)', done: false },
+      { text: 'Hyrox Simulation 50%', done: false },
+      { text: 'Sub-2 pace intervals 10x400m', done: false },
+    ],
+    keyLifts: { 'Seated Row': '50→57.5kg', 'Lat Pulldown': '60→67.5kg', 'Chest Press': '55→62.5kg', 'Hip Thrust': '85→100kg' },
+  },
+  6: { // July
+    title: 'Peak + Full Simulation',
+    goals: [
+      { text: 'Seated Row TARGET 60kg', done: false },
+      { text: 'Lat Pulldown TARGET 70kg', done: false },
+      { text: 'Chest Press TARGET 65kg', done: false },
+      { text: 'Hip Thrust 110kg', done: false },
+      { text: 'Full Hyrox Simulation < 2:15', done: false },
+      { text: 'Wall Balls 100 unbroken @ 9kg', done: false },
+    ],
+    keyLifts: { 'Seated Row': '60→62.5kg', 'Lat Pulldown': '70→72.5kg', 'Chest Press': '65→67.5kg', 'Hip Thrust': '105→110kg' },
+  },
+  7: { // August
+    title: 'Taper → HYROX SUB-2:00!',
+    goals: [
+      { text: 'Taper — ลด volume, รักษา intensity', done: false },
+      { text: 'Hyrox Simulation 80% สุดท้าย', done: false },
+      { text: '🏆 HYROX RACE — SUB-2:00!', done: false },
+    ],
+    keyLifts: { 'Seated Row': '55kg (taper)', 'Lat Pulldown': '65kg (taper)', 'Chest Press': '40-65kg', 'Hip Thrust': '60kg (taper)' },
+  },
+};
+
+// Weekly weight progression: key lifts per week (week start date → weights)
+export const weeklyProgression = [
+  { week: '24-30 มี.ค.', row: 35, lat: 45, chest: 45, hip: 60 },
+  { week: '31 มี.ค.-6 เม.ย.', row: 37.5, lat: 47.5, chest: 47.5, hip: 65 },
+  { week: '7-13 เม.ย.', row: null, lat: null, chest: null, hip: null, note: 'No Gym Week' },
+  { week: '14-20 เม.ย.', row: 42.5, lat: 52.5, chest: 50, hip: 70 },
+  { week: '21-27 เม.ย.', row: 45, lat: 55, chest: 52.5, hip: 75 },
+  { week: '28 เม.ย.-4 พ.ค.', row: 47.5, lat: 57.5, chest: null, hip: null, note: 'Sim week' },
+  { week: '5-11 พ.ค.', row: 50, lat: 60, chest: 55, hip: 80, note: 'PEAK' },
+  { week: '12-18 พ.ค.', row: 40, lat: 50, chest: 45, hip: 60, note: 'Taper' },
+  { week: '19-25 พ.ค.', row: null, lat: null, chest: null, hip: null, note: 'Crucible Race' },
+  { week: '26-31 พ.ค.', row: 35, lat: 45, chest: 45, hip: 60, note: 'Recovery' },
+  { week: '1-7 มิ.ย.', row: 50, lat: 60, chest: 55, hip: 85 },
+  { week: '8-14 มิ.ย.', row: 52.5, lat: 62.5, chest: 57.5, hip: 90 },
+  { week: '15-21 มิ.ย.', row: 55, lat: 65, chest: 60, hip: 95, note: 'MILESTONE' },
+  { week: '22-28 มิ.ย.', row: 57.5, lat: 67.5, chest: 62.5, hip: 100 },
+  { week: '29 มิ.ย.-5 ก.ค.', row: 60, lat: 70, chest: 65, hip: 105, note: 'TARGET' },
+  { week: '6-12 ก.ค.', row: 62.5, lat: 72.5, chest: 67.5, hip: 110 },
+  { week: '13-19 ก.ค.', row: null, lat: null, chest: null, hip: null, note: 'Recovery' },
+  { week: '20-26 ก.ค.', row: 55, lat: 65, chest: null, hip: null, note: 'Maintain' },
+  { week: '27 ก.ค.-2 ส.ค.', row: 60, lat: 70, chest: 65, hip: 110, note: 'Final Build' },
+  { week: '3-9 ส.ค.', row: 55, lat: 65, chest: 40, hip: 60, note: 'Taper' },
+  { week: '10-16 ส.ค.', row: null, lat: null, chest: null, hip: null, note: 'HYROX RACE!' },
+];
+
 // Generate the color based on type
 export const getWorkoutColor = (type) => {
   const colors = {

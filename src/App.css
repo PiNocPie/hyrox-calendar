@@ -267,6 +267,163 @@ body {
   filter: drop-shadow(0 0 4px rgba(0, 230, 118, 0.5));
 }
 
+/* ====== Monthly Goals ====== */
+.monthly-goals {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.monthly-goals-header h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
+
+.monthly-goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+.goal-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.goal-item.done {
+  color: var(--success);
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.goal-bullet {
+  font-size: 0.7rem;
+  min-width: 14px;
+}
+
+.monthly-lifts h4 {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.lifts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.lift-item {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.lift-name {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+.lift-value {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-yellow);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ====== Weekly Progression ====== */
+.weekly-progression {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.weekly-progression h4 {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.progression-table {
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 0.68rem;
+}
+
+.progression-header {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr;
+  gap: 4px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  position: sticky;
+  top: 0;
+  background: var(--bg-card);
+}
+
+.progression-row {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr;
+  gap: 4px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.prog-week {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.prog-note {
+  font-size: 0.6rem;
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.prog-lift {
+  text-align: center;
+}
+
+.prog-lift.up {
+  color: var(--success);
+  font-weight: 700;
+  position: relative;
+}
+
+.prog-lift.up::after {
+  content: ' ↑';
+  font-size: 0.6rem;
+}
+
 /* Legend */
 .legend {
   display: flex;
