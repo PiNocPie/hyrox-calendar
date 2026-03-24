@@ -307,6 +307,21 @@ function App() {
   const selectedWorkout = workouts[selectedDate];
   const intensity = useMemo(() => getIntensity(selectedWorkout), [selectedWorkout]);
 
+  // Calculate streak
+  const streak = useMemo(() => {
+    let count = 0;
+    const d = new Date('2026-03-24T12:00:00');
+    while (true) {
+      d.setDate(d.getDate() - 1);
+      const ds = formatDateStr(d.getFullYear(), d.getMonth(), d.getDate());
+      const w = workouts[ds];
+      if (!w) break;
+      if (w.type === 'rest' || w.type === 'recovery') { count++; continue; }
+      if (completedWorkouts[ds]) { count++; } else { break; }
+    }
+    return count;
+  }, [completedWorkouts]);
+
   const parsedExercises = useMemo(() => {
     if (!selectedWorkout) return [];
     return selectedWorkout.content.split('\n').map((line, i) => parseExerciseLine(line, i));
@@ -327,24 +342,21 @@ function App() {
       const isSelected = dateStr === selectedDate;
       const isToday = dateStr === today;
       const isCompleted = completedWorkouts[dateStr];
+      const isPast = dateStr < today;
+      const isMissed = isPast && workout && !isCompleted && workout.type !== 'rest' && workout.type !== 'recovery';
 
       days.push(
         <div
           key={i}
-          className={`week-day ${workout ? 'has-workout' : ''} ${isSelected ? 'selected' : ''} ${isToday ? 'today' : ''} ${isCompleted ? 'completed' : ''}`}
+          className={`week-day-circle ${isSelected ? 'selected' : ''} ${isToday ? 'today' : ''} ${isCompleted ? 'completed' : ''} ${isMissed ? 'missed' : ''}`}
           onClick={() => { if (workout) setSelectedDate(dateStr); }}
         >
-          <span className="week-day-label">{thaiDaysShort[d.getDay()]}</span>
-          <span className="week-day-number">{d.getDate()}</span>
-          {workout && (
-            <div className="week-day-dot" style={{ backgroundColor: getWorkoutColor(workout.type), color: getWorkoutColor(workout.type) }} />
-          )}
-          {workout && (
-            <span className="week-day-type">
-              {workout.type === 'rest' ? 'REST' : workout.type === 'race' ? 'RACE' : workout.title.replace(/[🏆🔥🏠💪🛌]/g, '').trim().substring(0, 12)}
-            </span>
-          )}
-          {isCompleted && <Check className="week-day-check" size={10} />}
+          <div className="circle-ring" style={workout ? { borderColor: getWorkoutColor(workout.type) } : {}}>
+            <span className="circle-number">{d.getDate()}</span>
+            {isMissed && <span className="circle-x">×</span>}
+            {isCompleted && <Check className="circle-check" size={12} />}
+          </div>
+          <span className="circle-label">{thaiDaysShort[d.getDay()]}</span>
         </div>
       );
     }
@@ -434,18 +446,26 @@ function App() {
         <div className="calendar-container">
           {isMobile ? (
             <>
-              <div className="calendar-header">
-                <button onClick={() => changeWeek(-1)} className="nav-btn">
-                  <ChevronLeft size={18} />
-                </button>
-                <h2>{weekLabel}</h2>
-                <button onClick={() => changeWeek(1)} className="nav-btn">
-                  <ChevronRight size={18} />
-                </button>
+              <div className="mobile-date-header">
+                <div className="mobile-date-info">
+                  <h2>{weekLabel}</h2>
+                  <span className="streak-badge">Streak: {streak} 🔥</span>
+                </div>
+                <div className="mobile-nav">
+                  <button onClick={() => changeWeek(-1)} className="nav-btn">
+                    <ChevronLeft size={16} />
+                  </button>
+                  <button onClick={() => changeWeek(1)} className="nav-btn">
+                    <ChevronRight size={16} />
+                  </button>
+                </div>
               </div>
-              <div className="week-grid">
+              <div className="week-circles">
                 {renderWeekView()}
               </div>
+              {selectedWorkout && (
+                <div className="mobile-rx-label">YOUR DAILY RX</div>
+              )}
             </>
           ) : (
             <>
