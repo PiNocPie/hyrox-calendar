@@ -237,9 +237,16 @@ function ExerciseCard({ data, checked, onToggle }) {
   );
 }
 
+function getWeekStart(dateStr) {
+  const d = new Date(dateStr + 'T12:00:00');
+  const day = d.getDay(); // 0=Sun
+  const diff = d.getDate() - day;
+  return new Date(d.getFullYear(), d.getMonth(), diff);
+}
+
 function App() {
   const [currentDate, setCurrentDate] = useState(new Date(2026, 2, 1));
-  const [selectedDate, setSelectedDate] = useState('2026-03-23');
+  const [selectedDate, setSelectedDate] = useState('2026-03-24');
   const [completedWorkouts, setCompletedWorkouts] = useState(() => {
     const saved = localStorage.getItem('completedWorkouts');
     return saved ? JSON.parse(saved) : {};
@@ -248,6 +255,14 @@ function App() {
     const saved = localStorage.getItem('checkedExercises');
     return saved ? JSON.parse(saved) : {};
   });
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+  const [weekStart, setWeekStart] = useState(() => getWeekStart('2026-03-24'));
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 700);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem('completedWorkouts', JSON.stringify(completedWorkouts));
@@ -262,6 +277,15 @@ function App() {
     newDate.setMonth(newDate.getMonth() + delta);
     if (newDate >= new Date(2026, 2, 1) && newDate <= new Date(2026, 7, 31)) {
       setCurrentDate(newDate);
+    }
+  };
+
+  const changeWeek = (delta) => {
+    const newStart = new Date(weekStart);
+    newStart.setDate(newStart.getDate() + delta * 7);
+    if (newStart >= new Date(2026, 2, 1) && newStart <= new Date(2026, 7, 31)) {
+      setWeekStart(newStart);
+      setCurrentDate(new Date(newStart.getFullYear(), newStart.getMonth(), 1));
     }
   };
 
@@ -291,6 +315,52 @@ function App() {
   // Count checked exercises for this date
   const exerciseCount = parsedExercises.filter(e => e.type === 'exercise').length;
   const checkedCount = parsedExercises.filter(e => e.type === 'exercise' && checkedExercises[`${selectedDate}-${e.id}`]).length;
+
+  const renderWeekView = () => {
+    const today = '2026-03-24';
+    const days = [];
+    for (let i = 0; i < 7; i++) {
+      const d = new Date(weekStart);
+      d.setDate(d.getDate() + i);
+      const dateStr = formatDateStr(d.getFullYear(), d.getMonth(), d.getDate());
+      const workout = workouts[dateStr];
+      const isSelected = dateStr === selectedDate;
+      const isToday = dateStr === today;
+      const isCompleted = completedWorkouts[dateStr];
+
+      days.push(
+        <div
+          key={i}
+          className={`week-day ${workout ? 'has-workout' : ''} ${isSelected ? 'selected' : ''} ${isToday ? 'today' : ''} ${isCompleted ? 'completed' : ''}`}
+          onClick={() => { if (workout) setSelectedDate(dateStr); }}
+        >
+          <span className="week-day-label">{thaiDaysShort[d.getDay()]}</span>
+          <span className="week-day-number">{d.getDate()}</span>
+          {workout && (
+            <div className="week-day-dot" style={{ backgroundColor: getWorkoutColor(workout.type), color: getWorkoutColor(workout.type) }} />
+          )}
+          {workout && (
+            <span className="week-day-type">
+              {workout.type === 'rest' ? 'REST' : workout.type === 'race' ? 'RACE' : workout.title.replace(/[🏆🔥🏠💪🛌]/g, '').trim().substring(0, 12)}
+            </span>
+          )}
+          {isCompleted && <Check className="week-day-check" size={10} />}
+        </div>
+      );
+    }
+    return days;
+  };
+
+  const weekLabel = useMemo(() => {
+    const end = new Date(weekStart);
+    end.setDate(end.getDate() + 6);
+    const sm = thaiMonths[weekStart.getMonth()].substring(0, 3);
+    const em = thaiMonths[end.getMonth()].substring(0, 3);
+    if (weekStart.getMonth() === end.getMonth()) {
+      return `${weekStart.getDate()}-${end.getDate()} ${sm}`;
+    }
+    return `${weekStart.getDate()} ${sm} - ${end.getDate()} ${em}`;
+  }, [weekStart]);
 
   const renderCalendar = () => {
     const year = currentDate.getFullYear();
@@ -362,25 +432,44 @@ function App() {
 
       <main className="main">
         <div className="calendar-container">
-          <div className="calendar-header">
-            <button onClick={() => changeMonth(-1)} className="nav-btn">
-              <ChevronLeft size={18} />
-            </button>
-            <h2>{thaiMonths[currentDate.getMonth()]} {currentDate.getFullYear()}</h2>
-            <button onClick={() => changeMonth(1)} className="nav-btn">
-              <ChevronRight size={18} />
-            </button>
-          </div>
+          {isMobile ? (
+            <>
+              <div className="calendar-header">
+                <button onClick={() => changeWeek(-1)} className="nav-btn">
+                  <ChevronLeft size={18} />
+                </button>
+                <h2>{weekLabel}</h2>
+                <button onClick={() => changeWeek(1)} className="nav-btn">
+                  <ChevronRight size={18} />
+                </button>
+              </div>
+              <div className="week-grid">
+                {renderWeekView()}
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="calendar-header">
+                <button onClick={() => changeMonth(-1)} className="nav-btn">
+                  <ChevronLeft size={18} />
+                </button>
+                <h2>{thaiMonths[currentDate.getMonth()]} {currentDate.getFullYear()}</h2>
+                <button onClick={() => changeMonth(1)} className="nav-btn">
+                  <ChevronRight size={18} />
+                </button>
+              </div>
 
-          <div className="calendar-weekdays">
-            {thaiDaysShort.map((day, i) => (
-              <div key={i} className="weekday">{day}</div>
-            ))}
-          </div>
+              <div className="calendar-weekdays">
+                {thaiDaysShort.map((day, i) => (
+                  <div key={i} className="weekday">{day}</div>
+                ))}
+              </div>
 
-          <div className="calendar-grid">
-            {renderCalendar()}
-          </div>
+              <div className="calendar-grid">
+                {renderCalendar()}
+              </div>
+            </>
+          )}
 
           <div className="legend">
             {[

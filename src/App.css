@@ -809,6 +809,96 @@ body {
   font-weight: 700;
 }
 
+/* ====== Week View (Mobile) ====== */
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.week-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 8px 2px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+  min-height: 72px;
+}
+
+.week-day.has-workout {
+  background: var(--bg-elevated);
+}
+
+.week-day.has-workout:active {
+  transform: scale(0.95);
+}
+
+.week-day.selected {
+  border-color: var(--accent) !important;
+  background: var(--accent-dim) !important;
+}
+
+.week-day.today {
+  border: 2px solid var(--accent);
+}
+
+.week-day.completed {
+  background: var(--success-dim);
+}
+
+.week-day-label {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.week-day-number {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.week-day.today .week-day-number {
+  color: var(--accent);
+}
+
+.week-day.completed .week-day-number {
+  color: var(--success);
+}
+
+.week-day-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.week-day-type {
+  font-size: 0.5rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.2;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.week-day-check {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  color: var(--success);
+  filter: drop-shadow(0 0 3px rgba(0, 230, 118, 0.5));
+}
+
 /* ====== Mobile ====== */
 @media (max-width: 600px) {
   .header {
@@ -835,8 +925,19 @@ body {
   }
 
   .calendar-container {
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 12px;
+  }
+
+  .monthly-goals,
+  .weekly-progression {
+    display: none;
+  }
+
+  .legend {
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
   }
 
   .calendar-day {
