@@ -1,0 +1,24 @@
+{
+  "short_name": "Hyrox",
+  "name": "Hyrox Training Calendar",
+  "description": "Track your Hyrox training from March to August 2026 — Sub-2:00 target!",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0a0a0a",
+  "background_color": "#0a0a0a",
+  "orientation": "portrait"
+}
