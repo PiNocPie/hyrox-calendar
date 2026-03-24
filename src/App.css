@@ -267,6 +267,30 @@ body {
   filter: drop-shadow(0 0 4px rgba(0, 230, 118, 0.5));
 }
 
+.calendar-day.missed {
+  background: var(--accent-dim);
+  border-color: rgba(255, 58, 58, 0.3);
+}
+
+.missed-x {
+  position: absolute;
+  top: 1px;
+  right: 4px;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* Daily RX Label */
+.daily-rx-label {
+  padding: 1.25rem 1.25rem 0;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
 /* ====== Monthly Goals ====== */
 .monthly-goals {
   margin-top: 1.25rem;

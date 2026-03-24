@@ -379,7 +379,7 @@ function App() {
     const month = currentDate.getMonth();
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const today = '2026-03-23';
+    const today = '2026-03-24';
 
     const days = [];
 
@@ -393,11 +393,13 @@ function App() {
       const isSelected = dateStr === selectedDate;
       const isToday = dateStr === today;
       const isCompleted = completedWorkouts[dateStr];
+      const isPast = dateStr < today;
+      const isMissed = isPast && workout && !isCompleted && workout.type !== 'rest' && workout.type !== 'recovery';
 
       days.push(
         <div
           key={day}
-          className={`calendar-day ${workout ? 'has-workout' : ''} ${isSelected ? 'selected' : ''} ${isToday ? 'today' : ''} ${isCompleted ? 'completed' : ''}`}
+          className={`calendar-day ${workout ? 'has-workout' : ''} ${isSelected ? 'selected' : ''} ${isToday ? 'today' : ''} ${isCompleted ? 'completed' : ''} ${isMissed ? 'missed' : ''}`}
           onClick={() => workout && setSelectedDate(dateStr)}
         >
           <span className="day-number">{day}</span>
@@ -410,6 +412,7 @@ function App() {
             </>
           )}
           {isCompleted && <Check className="completed-check" size={12} />}
+          {isMissed && <span className="missed-x">×</span>}
         </div>
       );
     }
@@ -430,6 +433,7 @@ function App() {
             <h1><span className="accent">Hyrox</span> Training</h1>
           </div>
           <div className="stats">
+            <span className="streak-badge">Streak: {streak} 🔥</span>
             <div className="stat">
               <Calendar size={14} />
               <span>{completedCountAll}/{totalWorkouts}</span>
@@ -572,6 +576,7 @@ function App() {
 
         {selectedWorkout ? (
           <div className="workout-detail">
+            <div className="daily-rx-label">YOUR DAILY RX</div>
             <div className="workout-detail-header">
               <div>
                 <p className="workout-date">
