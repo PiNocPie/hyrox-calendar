@@ -549,14 +549,14 @@ function App() {
                 <span className="prog-lift">Row</span>
                 <span className="prog-lift">Lat</span>
                 <span className="prog-lift">Chest</span>
-                <span className="prog-lift">Hip</span>
+                <span className="prog-lift">Step</span>
               </div>
               {weeklyProgression.map((w, i) => {
                 const prev = i > 0 ? weeklyProgression[i - 1] : null;
                 const rowUp = prev && w.row && prev.row && w.row > prev.row;
                 const latUp = prev && w.lat && prev.lat && w.lat > prev.lat;
                 const chestUp = prev && w.chest && prev.chest && w.chest > prev.chest;
-                const hipUp = prev && w.hip && prev.hip && w.hip > prev.hip;
+                const stepUp = prev && w.step && prev.step && w.step > prev.step;
                 return (
                   <div key={i} className={`progression-row ${w.note ? 'has-note' : ''}`}>
                     <span className="prog-week">
@@ -566,7 +566,7 @@ function App() {
                     <span className={`prog-lift ${rowUp ? 'up' : ''}`}>{w.row || '—'}</span>
                     <span className={`prog-lift ${latUp ? 'up' : ''}`}>{w.lat || '—'}</span>
                     <span className={`prog-lift ${chestUp ? 'up' : ''}`}>{w.chest || '—'}</span>
-                    <span className={`prog-lift ${hipUp ? 'up' : ''}`}>{w.hip || '—'}</span>
+                    <span className={`prog-lift ${stepUp ? 'up' : ''}`}>{w.step || '—'}</span>
                   </div>
                 );
               })}
