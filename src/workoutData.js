@@ -9,20 +9,20 @@ export const workouts = {
   '2026-03-22': { type: 'rest', title: 'REST 🛌', badge: 'Recovery', content: 'วันพัก — นอนให้พอ กินให้ดี' },
   '2026-03-23': { type: 'recovery', title: 'Mobility & Recovery', badge: '30-45 min', content: 'Walk: 20-30 min\nFoam Roll: Quads, Hamstrings, Calves, Lats (2 min/ข้าง)\nStretch: Hip 90/90, Pigeon, Cat-Cow' },
   '2026-03-24': { type: 'strength', title: 'Upper Day (Full) 💪', badge: '60-75 min', content: 'Seated Row: 4x10 @ 35kg 🔥\nLat Pulldown: 4x10 @ 40kg\nChest Press: 4x10 @ 40kg\nFace Pull: 3x15 @ 15kg\nCable Lateral Raise: 3x12 @ 5kg\nRope Tricep Pushdown: 3x12 @ 20kg\nCable Curl: 3x12 @ 15kg\nBack Extension: 3x12 BW' },
-  '2026-03-25': { type: 'run', title: 'Zone 2 Run', badge: '35-45 min', content: 'Pace: 7:00-7:30 /km\nTreadmill: 8.0-8.5 km/h\nHR: 130-145 bpm\nFeel: พูดได้เต็มประโยค\n\nCool-down + Static Stretch 10 min' },
+  '2026-03-25': { type: 'run', title: 'Zone 2 Run', badge: '35-45 min', content: 'Pace: 7:00-7:30 /km\nTreadmill: 6.5 km/h\nHR: 130-145 bpm\nFeel: พูดได้เต็มประโยค\n\nCool-down + Static Stretch 10 min' },
   '2026-03-26': { type: 'strength', title: 'Lower Day', badge: '60-75 min', content: 'Leg Press: 4x10 @ 100kg\nLeg Curl: 3x12 @ 40kg\nLeg Extension: 3x12 @ 40kg\nHip Thrust: 3x12 @ 60kg\nCalf Raise: 3x15 @ 60kg\nWalking Lunges: 2x10/leg @ 30kg\n\nถ้าขายังไม่พร้อม → ทำ Upper แทน' },
   '2026-03-27': { type: 'mixed', title: 'Run + Upper', badge: '60-75 min', content: 'Zone 2 Run: 25-30 min\n\nUpper:\nLat Pulldown 3x10 @ 40kg\nSeated Row 3x10 @ 35kg\nChest Press 3x10 @ 40kg\nFace Pull 3x12 @ 15kg' },
-  '2026-03-28': { type: 'run', title: 'Long Run', badge: '50-65 min', content: 'Zone 2: 60-75 min\nPace: 7:00-7:30 /km\nTreadmill: 8.0-8.5 km/h\nHR: 130-145 bpm\n\nCool-down + Foam Roll 10 min' },
+  '2026-03-28': { type: 'run', title: 'Long Run', badge: '50-65 min', content: 'Zone 2: 60-75 min\nPace: 7:00-7:30 /km\nTreadmill: 6.5 km/h\nHR: 130-145 bpm\n\nCool-down + Foam Roll 10 min' },
   '2026-03-29': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี\nMobility, Stretch ถ้าอยาก' },
   '2026-03-30': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 37.5kg 🔥\nLat Pulldown: 4x10 @ 42.5kg\nBack Extension: 3x12 BW\nFace Pull: 3x15 @ 15kg\nDead Hang: 3x max BW' },
-  '2026-03-31': { type: 'run', title: 'Zone 2 Run + Upper', badge: '60-70 min', content: 'Zone 2 Run: 45 min\nTreadmill: 8.0-8.5 km/h\n\nUpper:\nChest Press: 3x10 @ 40kg\nRope Tricep Pushdown: 3x12 @ 20kg\nCable Curl: 3x12 @ 15kg' },
+  '2026-03-31': { type: 'run', title: 'Zone 2 Run + Upper', badge: '60-70 min', content: 'Zone 2 Run: 45 min\nTreadmill: 6.5 km/h\n\nUpper:\nChest Press: 3x10 @ 40kg\nRope Tricep Pushdown: 3x12 @ 20kg\nCable Curl: 3x12 @ 15kg' },
 
   // ===== APRIL 2026 =====
   // Week 2-3: Base Building
   '2026-04-01': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x10 @ 42.5kg\nHip Thrust: 4x10 @ 65kg\nLeg Curl: 3x12 @ 42.5kg\nWalking Lunges: 3x12/leg @ 30kg\n\nFinisher:\nWall Balls: 3x15 @ 9kg' },
   '2026-04-02': { type: 'run', title: 'Running Intervals', badge: '50-60 min', content: 'Warm-up: 10 min easy\nIntervals: 6x 400m @ race pace\nTreadmill: 10.0-10.5 km/h\nRest: 90s between\nCool-down: 10 min' },
   '2026-04-03': { type: 'strength', title: 'Strength - Mixed', badge: '60-75 min', content: 'Sled Push/Pull: 5x25m\nFarmer Carry: 3x50m @ 24kg/hand\nBurpees: 3x15 BW → Run 400m\nChest Press: 3x10 @ 42.5kg\nCable Curl: 3x12 @ 15kg\n\nEMOM 10 min:\nWall Balls: 12 @ 9kg' },
-  '2026-04-04': { type: 'run', title: 'Long Run', badge: '60-75 min', content: 'Zone 2: 70-85 min\nPace: 7:00-7:30 /km\nTreadmill: 8.0-8.5 km/h' },
+  '2026-04-04': { type: 'run', title: 'Long Run', badge: '60-75 min', content: 'Zone 2: 70-85 min\nPace: 7:00-7:30 /km\nTreadmill: 6.5 km/h' },
   '2026-04-05': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
   '2026-04-06': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: 'Seated Row: 4x10 @ 40kg 🔥\nLat Pulldown: 4x10 @ 45kg\nBack Extension: 3x12 + 5kg\nFace Pull: 3x15 @ 15kg\n\nFinisher:\nWall Balls: 3x15 @ 9kg' },
   '2026-04-07': { type: 'run', title: 'Tempo Run + Upper', badge: '60-70 min', content: 'Tempo Run: 25 min @ 6:30-7:00/km\nTreadmill: 9.0-9.5 km/h\nHR: 155-165 bpm\nFeel: พูดได้แค่สั้นๆ\n\nUpper:\nChest Press: 4x10 @ 45kg\nRope Tricep Pushdown: 3x12 @ 20kg\nCable Curl: 3x12 @ 15kg' },
@@ -102,7 +102,7 @@ export const workouts = {
   // ===== JUNE 2026 =====
   // Hyrox Focus - Build Phase
   '2026-05-31': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
-  '2026-06-02': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 30 min @ 8.5 km/h\n\nPM — BACK TO HYROX FOCUS!\nSeated Row: 4x10 @ 50kg 🔥\nLat Pulldown: 4x10 @ 55kg\nBack Extension: 3x12 + 15kg\nSled Pull: 5x30m\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Burpees: 6 BW' },
+  '2026-06-02': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 30 min @ 6.5 km/h\n\nPM — BACK TO HYROX FOCUS!\nSeated Row: 4x10 @ 50kg 🔥\nLat Pulldown: 4x10 @ 55kg\nBack Extension: 3x12 + 15kg\nSled Pull: 5x30m\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Burpees: 6 BW' },
   '2026-06-03': { type: 'run', title: 'Zone 2 + SkiErg', badge: '60-70 min', content: 'Zone 2 Run: 40 min\nSkiErg: 3x 500m @ race pace' },
   '2026-06-04': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x10 @ 50kg\nHip Thrust: 4x10 @ 85kg\nLeg Curl: 3x12 @ 47.5kg\nWall Balls: 3x25 @ 9kg\n\nEMOM 10 min:\nOdd min — Run: 100m\nEven min — Wall Balls: 10 @ 9kg' },
   '2026-06-05': { type: 'run', title: 'Intervals', badge: '50-60 min', content: 'Warm-up: 10 min\n8x 400m @ sub-2 target pace (< 7:30/km)\nTreadmill: 10.5-11.0 km/h\nRest: 75s' },
@@ -111,7 +111,7 @@ export const workouts = {
   '2026-06-07': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 
   // Week continues...
-  '2026-06-09': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 30 min @ 8.5 km/h\n\nPM:\nSeated Row: 4x10 @ 52.5kg 🔥\nLat Pulldown: 4x10 @ 57.5kg\nBack Extension: 3x12 + 17.5kg\nDead Hang: 3x max' },
+  '2026-06-09': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 30 min @ 6.5 km/h\n\nPM:\nSeated Row: 4x10 @ 52.5kg 🔥\nLat Pulldown: 4x10 @ 57.5kg\nBack Extension: 3x12 + 17.5kg\nDead Hang: 3x max' },
   '2026-06-10': { type: 'run', title: 'Tempo Run + Upper', badge: '60-70 min', content: 'Tempo Run: 30 min @ 6:15-6:45/km\nTreadmill: 10.0-10.5 km/h\nHR: 155-165 bpm\n\nUpper:\nFace Pull: 3x15 @ 15kg\nRope Tricep Pushdown: 3x12 @ 25kg\nCable Curl: 3x12 @ 17.5kg' },
   '2026-06-11': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x10 @ 52.5kg\nHip Thrust: 4x10 @ 90kg\nLunges 100m @ 30kg → Run 1km (cramp drill)\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Lunges: 20m @ 30kg' },
   '2026-06-12': { type: 'run', title: 'Intervals + Burpees', badge: '55-65 min', content: 'Warm-up: 10 min\n6x (400m + 10 burpees)\nRest: 90s\nAnti-cramp specific!' },
@@ -120,7 +120,7 @@ export const workouts = {
   '2026-06-14': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 
   // Continue building...
-  '2026-06-16': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 30 min @ 9.0 km/h\n\nPM:\nSeated Row: 4x10 @ 55kg 🔥 MILESTONE!\nLat Pulldown: 4x10 @ 60kg\nBack Extension: 3x12 + 20kg' },
+  '2026-06-16': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 30 min @ 7.0 km/h\n\nPM:\nSeated Row: 4x10 @ 55kg 🔥 MILESTONE!\nLat Pulldown: 4x10 @ 60kg\nBack Extension: 3x12 + 20kg' },
   '2026-06-17': { type: 'run', title: 'Zone 2 + Row', badge: '60-70 min', content: 'Zone 2 Run: 40 min\nRow: 3x 1000m @ race pace' },
   '2026-06-18': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x10 @ 55kg\nHip Thrust: 4x10 @ 95kg\nLeg Curl: 4x10 @ 50kg\n\nEMOM 12 min (rotate):\nMin 1 — Wall Balls: 15 @ 9kg\nMin 2 — Burpees: 8 BW\nMin 3 — Run: 150m' },
   '2026-06-19': { type: 'run', title: 'Intervals', badge: '55-65 min', content: 'Warm-up: 10 min\n10x 400m @ sub-2 pace\nTreadmill: 10.5-11.0 km/h\nRest: 60s (race simulation!)' },
@@ -129,7 +129,7 @@ export const workouts = {
   '2026-06-21': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 
   // Peak weeks for Hyrox
-  '2026-06-23': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 30 min @ 9.0 km/h\n\nPM:\nSeated Row: 4x8 @ 57.5kg 🔥\nLat Pulldown: 4x8 @ 62.5kg\nBack Extension: 3x10 + 22.5kg' },
+  '2026-06-23': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 30 min @ 7.0 km/h\n\nPM:\nSeated Row: 4x8 @ 57.5kg 🔥\nLat Pulldown: 4x8 @ 62.5kg\nBack Extension: 3x10 + 22.5kg' },
   '2026-06-24': { type: 'run', title: 'Zone 2 + SkiErg', badge: '60-70 min', content: 'Zone 2 Run: 45 min\nSkiErg: 1000m time trial' },
   '2026-06-25': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x8 @ 57.5kg\nHip Thrust: 4x8 @ 100kg MILESTONE!\nWall Balls: 100 total @ 9kg\n\nEMOM 12 min (rotate):\nMin 1 — Run: 200m\nMin 2 — Wall Balls: 12 @ 9kg\nMin 3 — Burpees: 8 BW' },
   '2026-06-26': { type: 'run', title: 'Intervals + Lunges', badge: '55-65 min', content: '6x (400m + Lunges 50m @ 30kg)\nAnti-cramp drill\nRest: 90s' },
@@ -138,7 +138,7 @@ export const workouts = {
   '2026-06-28': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 
   // ===== JULY 2026 =====
-  '2026-07-01': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 35 min @ 9.0 km/h\n\nPM:\nSeated Row: 4x8 @ 60kg 🔥\nLat Pulldown: 4x8 @ 60kg TARGET!\nBack Extension: 3x10 + 25kg TARGET!' },
+  '2026-07-01': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 35 min @ 7.0 km/h\n\nPM:\nSeated Row: 4x8 @ 60kg 🔥\nLat Pulldown: 4x8 @ 60kg TARGET!\nBack Extension: 3x10 + 25kg TARGET!' },
   '2026-07-02': { type: 'run', title: 'Zone 2 + Row', badge: '60-70 min', content: 'Zone 2 Run: 45 min\nRow: 1000m time trial' },
   '2026-07-03': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x8 @ 60kg TARGET!\nHip Thrust: 4x8 @ 105kg\nLunges 100m @ 30kg → Run 1.5km\n\nEMOM 12 min (rotate):\nMin 1 — Wall Balls: 15 @ 9kg\nMin 2 — Lunges: 25m @ 30kg\nMin 3 — Run: 200m' },
   '2026-07-04': { type: 'run', title: 'Intervals', badge: '55-65 min', content: 'Warm-up: 10 min\n8x 800m @ race pace\nTreadmill: 10.5-11.0 km/h\nRest: 90s\nBig session!' },
@@ -147,7 +147,7 @@ export const workouts = {
   '2026-07-05': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 
   // Continue July
-  '2026-07-08': { type: 'strength', title: 'Strength - Pull PEAK', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 35 min @ 9.0 km/h\n\nPM:\nSeated Row: 4x6 @ 62.5kg 🔥\nLat Pulldown: 4x6 @ 67.5kg\nNearing targets!' },
+  '2026-07-08': { type: 'strength', title: 'Strength - Pull PEAK', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 35 min @ 7.0 km/h\n\nPM:\nSeated Row: 4x6 @ 62.5kg 🔥\nLat Pulldown: 4x6 @ 67.5kg\nNearing targets!' },
   '2026-07-09': { type: 'run', title: 'Tempo Run + Upper', badge: '60-70 min', content: 'Tempo Run: 30 min @ 6:00-6:30/km\nTreadmill: 10.0-10.5 km/h\nHR: 160-170 bpm\n\nUpper:\nChest Press: 3x10 @ 55kg\nFace Pull: 3x15 @ 15kg\nRope Tricep Pushdown: 3x12 @ 25kg\nCable Curl: 3x12 @ 17.5kg' },
   '2026-07-10': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x6 @ 62.5kg\nHip Thrust: 4x6 @ 110kg\nWall Balls: 100 unbroken @ 9kg\n\nEMOM 10 min:\nOdd min — Burpees: 10 BW\nEven min — Run: 200m' },
   '2026-07-11': { type: 'run', title: 'Race Pace Run', badge: '50-60 min', content: '40 min @ sub-7:30/km pace\nTreadmill: 10.0 km/h\nPractice race running' },
@@ -165,7 +165,7 @@ export const workouts = {
   '2026-07-19': { type: 'rest', title: 'REST 🛌', badge: '', content: 'วันพัก — นอนให้พอ กินให้ดี' },
 
   // Late July - Final Build
-  '2026-07-22': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 30 min @ 9.0 km/h\n\nPM:\nSeated Row: 4x8 @ 60kg 🔥\nLat Pulldown: 4x8 @ 60kg\nBack Extension: 3x10 + 25kg\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Burpees: 8 BW' },
+  '2026-07-22': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: 'AM — Zone 2 Run: 30 min @ 7.0 km/h\n\nPM:\nSeated Row: 4x8 @ 60kg 🔥\nLat Pulldown: 4x8 @ 60kg\nBack Extension: 3x10 + 25kg\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Burpees: 8 BW' },
   '2026-07-23': { type: 'run', title: 'Zone 2 + Erg', badge: '60-70 min', content: 'Zone 2: 40 min\nSkiErg: 1000m\nRow: 1000m' },
   '2026-07-24': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: 'Chest Press: 4x8 @ 60kg\nHip Thrust: 4x8 @ 110kg\nBurpees 50 → Run 1km\n\nEMOM 12 min (rotate):\nMin 1 — Wall Balls: 15 @ 9kg\nMin 2 — Lunges: 25m @ 30kg\nMin 3 — Run: 200m' },
   '2026-07-25': { type: 'run', title: 'Intervals', badge: '55-65 min', content: '8x 600m @ race pace\nRest: 75s\nBig aerobic session' },
