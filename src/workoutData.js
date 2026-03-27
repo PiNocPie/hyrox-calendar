@@ -14,17 +14,17 @@ export const workouts = {
   '2026-03-27': { type: 'mixed', title: 'Run + Upper', badge: '60-75 min', content: '🎯 cardio + strength รวม — ประหยัดเวลา ได้ทั้งวิ่งและเวท\n\nZone 2 Run: 25-30 min\n\nUpper:\nLat Pulldown 3x10 @ 40kg\nSeated Row 3x10 @ 35kg\nChest Press 3x10 @ 40kg\nFace Pull 3x12 @ 15kg' },
   '2026-03-28': { type: 'run', title: 'Long Run', badge: '50-65 min', content: '🎯 สร้างความอดทน — ร่างกายชินกับวิ่งนานเหมือนวันแข่ง\n\nZone 2: 60-75 min\nPace: 7:00-7:30 /km\nTreadmill: 6.5 km/h\nHR: 130-145 bpm\n\nCool-down + Foam Roll 10 min' },
   '2026-03-29': { type: 'rest', title: 'REST 🛌', badge: '', content: '🎯 ฟื้นตัว — กล้ามเนื้อซ่อมแซมและแข็งแรงขึ้น\n\nวันพัก — นอนให้พอ กินให้ดี\nMobility, Stretch ถ้าอยาก' },
-  '2026-03-30': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nSeated Row: 4x10 @ 37.5kg 🔥\nLat Pulldown: 4x10 @ 42.5kg\nBack Extension: 3x12 BW\nFace Pull: 3x15 @ 15kg\nDead Hang: 3x max BW\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW' },
+  '2026-03-30': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nSeated Row: 4x12 @ 35kg 🔥\nLat Pulldown: 4x12 @ 40kg\nBack Extension: 3x12 BW\nFace Pull: 3x15 @ 15kg\nDead Hang: 3x max BW\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW' },
   '2026-03-31': { type: 'run', title: 'Zone 2 Run + Upper', badge: '60-70 min', content: '🎯 cardio + strength รวม — ประหยัดเวลา ได้ทั้งวิ่งและเวท\n\nZone 2 Run: 45 min\nTreadmill: 6.5 km/h\n\nUpper:\nChest Press: 3x10 @ 40kg\nRope Tricep Pushdown: 3x12 @ 20kg\nCable Curl: 3x12 @ 15kg' },
 
   // ===== APRIL 2026 =====
   // Week 2-3: Base Building
-  '2026-04-01': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x10 @ 42.5kg\nLeg Press: 4x10 @ 105kg\nWeighted Step Up: 4x10/leg @ 10kg/hand\nLeg Curl: 3x12 @ 42.5kg\nWalking Lunges: 3x12/leg @ 30kg\nCalf Raise: 3x15 @ 62.5kg\nGoblet Squat: 3x12 @ 16kg\n\nFinisher:\nWall Balls: 3x15 @ 9kg (overload — แข่ง 6kg)\n\nCore:\nPallof Press: 3x12/side @ 10kg' },
+  '2026-04-01': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x12 @ 40kg\nLeg Press: 4x10 @ 105kg\nWeighted Step Up: 4x10/leg @ 10kg/hand\nLeg Curl: 3x15 @ 40kg\nWalking Lunges: 3x12/leg @ 30kg\nCalf Raise: 3x15 @ 62.5kg\nGoblet Squat: 3x12 @ 16kg\n\nFinisher:\nWall Balls: 3x15 @ 9kg (overload — แข่ง 6kg)\n\nCore:\nPallof Press: 3x12/side @ 10kg' },
   '2026-04-02': { type: 'run', title: 'Running Intervals', badge: '50-60 min', content: '🎯 เพิ่ม VO2max — วิ่งเร็วขึ้นที่ effort เท่าเดิม\n\nWarm-up: 10 min easy\nIntervals: 6x 400m @ race pace\nTreadmill: 10.0-10.5 km/h\nRest: 90s between\nCool-down: 10 min' },
-  '2026-04-03': { type: 'strength', title: 'Strength - Mixed', badge: '60-75 min', content: '🎯 ฝึก stations จริง — ร่างกายชินกับอุปกรณ์แข่ง\n\nSled Push/Pull: 5x25m\nFarmer Carry: 3x50m @ 24kg/hand\nBurpees: 3x15 BW → Run 400m\nChest Press: 3x10 @ 42.5kg\nCable Curl: 3x12 @ 15kg\n\nEMOM 10 min:\nWall Balls: 12 @ 9kg\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW\n\nTransition Drill:\nRun 400m → Sled Push 25m → Run 400m' },
+  '2026-04-03': { type: 'strength', title: 'Strength - Mixed', badge: '60-75 min', content: '🎯 ฝึก stations จริง — ร่างกายชินกับอุปกรณ์แข่ง\n\nSled Push/Pull: 5x25m\nFarmer Carry: 3x50m @ 24kg/hand\nBurpees: 3x15 BW → Run 400m\nChest Press: 3x12 @ 40kg\nCable Curl: 3x12 @ 15kg\n\nEMOM 10 min:\nWall Balls: 12 @ 9kg\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW\n\nTransition Drill:\nRun 400m → Sled Push 25m → Run 400m' },
   '2026-04-04': { type: 'run', title: 'Long Run', badge: '60-75 min', content: '🎯 สร้างความอดทน — ร่างกายชินกับวิ่งนานเหมือนวันแข่ง\n\nZone 2: 70-85 min\nPace: 7:00-7:30 /km\nTreadmill: 6.5 km/h' },
   '2026-04-05': { type: 'rest', title: 'REST 🛌', badge: '', content: '🎯 ฟื้นตัว — กล้ามเนื้อซ่อมแซมและแข็งแรงขึ้น\n\nวันพัก — นอนให้พอ กินให้ดี' },
-  '2026-04-06': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nSeated Row: 5x5 @ 47.5kg 🔥\nLat Pulldown: 5x5 @ 52.5kg\nBack Extension: 3x12 + 5kg\nFace Pull: 3x15 @ 15kg\n\nFinisher:\nWall Balls: 3x15 @ 9kg (overload — แข่ง 6kg)\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW' },
+  '2026-04-06': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nSeated Row: 5x5 @ 45kg 🔥\nLat Pulldown: 5x5 @ 50kg\nBack Extension: 3x12 + 5kg\nFace Pull: 3x15 @ 15kg\n\nFinisher:\nWall Balls: 3x15 @ 9kg (overload — แข่ง 6kg)\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW' },
   '2026-04-07': { type: 'run', title: 'Tempo Run + Upper', badge: '60-70 min', content: '🎯 threshold + strength — เพิ่มความเร็ววิ่งและแรงแขน\n\nTempo Run: 25 min @ 6:30-7:00/km\nTreadmill: 9.0-9.5 km/h\nHR: 155-165 bpm\nFeel: พูดได้แค่สั้นๆ\n\nUpper:\nChest Press: 4x10 @ 45kg\nRope Tricep Pushdown: 3x12 @ 20kg\nCable Curl: 3x12 @ 15kg' },
 
   // No Gym Week: 8-12 April
@@ -36,7 +36,7 @@ export const workouts = {
   '2026-04-12': { type: 'rest', title: 'REST 🛌', badge: '', content: '🎯 ฟื้นตัว — กล้ามเนื้อซ่อมแซมและแข็งแรงขึ้น\n\nวันพัก — นอนให้พอ กินให้ดี' },
 
   // Week 4: Build Phase
-  '2026-04-14': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nSeated Row: 4x10 @ 42.5kg 🔥\nLat Pulldown: 4x10 @ 47.5kg\nBack Extension: 3x12 + 7.5kg\nSandbag Carry: 3x25m @ 20kg\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Burpees: 6 BW\n\nCore:\nHanging Knee Raise: 3x10 BW' },
+  '2026-04-14': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nSeated Row: 4x12 @ 40kg 🔥\nLat Pulldown: 4x12 @ 45kg\nBack Extension: 3x15 + 5kg\nSandbag Carry: 3x25m @ 20kg\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Burpees: 6 BW\n\nCore:\nHanging Knee Raise: 3x10 BW' },
   '2026-04-15': { type: 'run', title: 'Zone 2 Run + Burden Run', badge: '60-70 min', content: '🎯 สร้าง aerobic base — หัวใจแข็งแรงขึ้น pace จะเร็วขึ้นเอง\n\nZone 2 Run: 35 min\nBurden Run practice: 20kg backpack x 200m x 3' },
   '2026-04-16': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x10 @ 45kg\nLeg Press: 4x10 @ 115kg\nWeighted Step Up: 4x10/leg @ 12kg/hand\nLunges: 100m @ 30kg → Run 800m (cramp prevention drill)\nCalf Raise: 3x15 @ 65kg\nGoblet Squat: 3x12 @ 16kg\n\nFinisher:\nWall Balls: 3x20 @ 9kg (overload — แข่ง 6kg)\n\nCore:\nPallof Press: 3x12/side @ 10kg' },
   '2026-04-17': { type: 'run', title: 'Running Intervals', badge: '50-60 min', content: '🎯 เพิ่ม VO2max — วิ่งเร็วขึ้นที่ effort เท่าเดิม\n\nWarm-up: 10 min\nIntervals: 7x 400m @ race pace\nTreadmill: 10.0-10.5 km/h\nRest: 90s\nCool-down: 10 min' },
@@ -45,9 +45,9 @@ export const workouts = {
   '2026-04-19': { type: 'rest', title: 'REST 🛌', badge: '', content: '🎯 ฟื้นตัว — กล้ามเนื้อซ่อมแซมและแข็งแรงขึ้น\n\nวันพัก — นอนให้พอ กินให้ดี' },
 
   // Week 5: Build Phase
-  '2026-04-21': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nSeated Row: 5x5 @ 52.5kg 🔥\nLat Pulldown: 5x5 @ 57.5kg\nBack Extension: 3x12 + 10kg\nHeavy Sled Pull: 3x40m\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Run: 100m\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW' },
-  '2026-04-22': { type: 'run', title: 'Tempo Run + Upper', badge: '60-70 min', content: '🎯 threshold + strength — เพิ่มความเร็ววิ่งและแรงแขน\n\nTempo Run: 25 min @ 6:30-7:00/km\nTreadmill: 9.0-9.5 km/h\nHR: 155-165 bpm\n\nUpper:\nChest Press: 3x10 @ 47.5kg\nFace Pull: 3x15 @ 15kg\nRope Tricep Pushdown: 3x12 @ 22.5kg\nCable Curl: 3x12 @ 15kg' },
-  '2026-04-23': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x10 @ 47.5kg\nLeg Press: 4x10 @ 120kg\nWeighted Step Up: 4x10/leg @ 12kg/hand\nLeg Curl: 3x12 @ 45kg\nLunges: 3x12/leg @ 30kg\nBurpees 40 → Run 800m (cramp drill)\nCalf Raise: 3x15 @ 67.5kg\nGoblet Squat: 3x12 @ 18kg\n\nFinisher:\nWall Balls: 3x25 @ 9kg (overload — แข่ง 6kg)\n\nCore:\nHanging Knee Raise: 3x10 BW' },
+  '2026-04-21': { type: 'strength', title: 'Strength - Pull', badge: '60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nSeated Row: 5x5 @ 50kg 🔥\nLat Pulldown: 5x5 @ 55kg\nBack Extension: 3x12 + 10kg\nHeavy Sled Pull: 3x40m\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Run: 100m\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW' },
+  '2026-04-22': { type: 'run', title: 'Tempo Run + Upper', badge: '60-70 min', content: '🎯 threshold + strength — เพิ่มความเร็ววิ่งและแรงแขน\n\nTempo Run: 25 min @ 6:30-7:00/km\nTreadmill: 9.0-9.5 km/h\nHR: 155-165 bpm\n\nUpper:\nChest Press: 3x12 @ 45kg\nFace Pull: 3x15 @ 15kg\nRope Tricep Pushdown: 3x12 @ 22.5kg\nCable Curl: 3x12 @ 15kg' },
+  '2026-04-23': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x12 @ 45kg\nLeg Press: 4x10 @ 120kg\nWeighted Step Up: 4x10/leg @ 12kg/hand\nLeg Curl: 3x12 @ 45kg\nLunges: 3x12/leg @ 30kg\nBurpees 40 → Run 800m (cramp drill)\nCalf Raise: 3x15 @ 67.5kg\nGoblet Squat: 3x12 @ 18kg\n\nFinisher:\nWall Balls: 3x25 @ 9kg (overload — แข่ง 6kg)\n\nCore:\nHanging Knee Raise: 3x10 BW' },
   '2026-04-24': { type: 'run', title: 'Running Intervals', badge: '50-60 min', content: '🎯 เพิ่ม VO2max — วิ่งเร็วขึ้นที่ effort เท่าเดิม\n\nWarm-up: 10 min\nIntervals: 8x 400m @ race pace\nTreadmill: 10.0-10.5 km/h\nRest: 75s (decreasing)\nCool-down: 10 min' },
   '2026-04-25': { type: 'strength', title: 'Strength - Mixed + Crucible', badge: '70-80 min', content: '🎯 ฝึก stations จริง — ร่างกายชินกับอุปกรณ์แข่ง\n\nSled Push/Pull: 60m (race distance)\nFarmer Carry: 4x50m @ 28kg/hand\nBurden Run: 20kg x 400m (full distance!)\nHeavy Sled Pull: 4x40m\n\nEMOM 12 min (rotate):\nMin 1 — Wall Balls: 15 @ 9kg\nMin 2 — Burpees: 8 BW\nMin 3 — Farmer Carry: 50m @ 24kg/hand\n\nCore:\nPallof Press: 3x12/side @ 10kg\n\nTransition Drill:\nRun 400m → Sled Push 25m → Wall Balls 20 @ 9kg → Run 400m' },
   '2026-04-27': { type: 'run', title: 'Long Run', badge: '75-90 min', content: '🎯 สร้างความอดทน — ร่างกายชินกับวิ่งนานเหมือนวันแข่ง\n\nZone 2: 85-100 min\nPace: 6:45-7:15 /km\nTreadmill: 9.0-9.5 km/h' },
@@ -60,14 +60,14 @@ export const workouts = {
 
   // ===== MAY 2026 =====
   '2026-05-01': { type: 'run', title: 'Recovery Run', badge: '30-40 min', content: '🎯 ฟื้นตัว active — เลือดไหลเวียนช่วยซ่อมกล้ามเนื้อ\n\nEasy Zone 2: 30-40 min\nRecovering from simulation' },
-  '2026-05-02': { type: 'strength', title: 'Strength - Mixed', badge: '60-75 min', content: '🎯 ฝึก stations จริง — ร่างกายชินกับอุปกรณ์แข่ง\n\nFull body maintenance:\nSled Push/Pull: 4x30m\nFarmer Carry: 3x50m @ 28kg/hand\nChest Press: 3x10 @ 47.5kg\nSeated Row: 3x10 @ 45kg\n\nEMOM 12 min (rotate):\nMin 1 — Wall Balls: 15 @ 9kg\nMin 2 — Burpees: 8 BW\nMin 3 — Run: 150m\n\nCore:\nHanging Knee Raise: 3x10 BW\n\nTransition Drill:\nRun 400m → Burpees 20 → Run 400m' },
+  '2026-05-02': { type: 'strength', title: 'Strength - Mixed', badge: '60-75 min', content: '🎯 ฝึก stations จริง — ร่างกายชินกับอุปกรณ์แข่ง\n\nFull body maintenance:\nSled Push/Pull: 4x30m\nFarmer Carry: 3x50m @ 28kg/hand\nChest Press: 3x12 @ 45kg\nSeated Row: 3x10 @ 45kg\n\nEMOM 12 min (rotate):\nMin 1 — Wall Balls: 15 @ 9kg\nMin 2 — Burpees: 8 BW\nMin 3 — Run: 150m\n\nCore:\nHanging Knee Raise: 3x10 BW\n\nTransition Drill:\nRun 400m → Burpees 20 → Run 400m' },
   '2026-05-04': { type: 'run', title: 'Long Run', badge: '70-80 min', content: '🎯 สร้างความอดทน — ร่างกายชินกับวิ่งนานเหมือนวันแข่ง\n\nZone 2: 80-90 min\nPace: 6:45-7:15 /km\nTreadmill: 9.0-9.5 km/h' },
   '2026-05-03': { type: 'rest', title: 'REST 🛌', badge: '', content: '🎯 ฟื้นตัว — กล้ามเนื้อซ่อมแซมและแข็งแรงขึ้น\n\nวันพัก — นอนให้พอ กินให้ดี' },
 
   // Week 7: Peak Week
   '2026-05-05': { type: 'strength', title: 'Strength - Pull PEAK', badge: '60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nSeated Row: 5x4 @ 55kg 🔥 PEAK\nLat Pulldown: 5x4 @ 60kg\nBack Extension: 3x10 + 15kg\nHeavy but controlled\n\nFinisher:\nWall Balls: 3x20 @ 9kg (overload — แข่ง 6kg)\n\nCore:\nHanging Knee Raise: 3x10 BW' },
   '2026-05-06': { type: 'run', title: 'Tempo Run + Upper', badge: '60-70 min', content: '🎯 threshold + strength — เพิ่มความเร็ววิ่งและแรงแขน\n\nTempo Run: 25 min @ 6:20-6:50/km\nTreadmill: 9.0-9.5 km/h\nHR: 155-165 bpm\n\nUpper:\nChest Press: 4x8 @ 50kg\nRope Tricep Pushdown: 3x12 @ 22.5kg\nCable Curl: 3x12 @ 17.5kg' },
-  '2026-05-07': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x8 @ 50kg\nLeg Press: 4x8 @ 125kg\nWeighted Step Up: 4x8/leg @ 14kg/hand\nLeg Curl: 3x10 @ 47.5kg\nCalf Raise: 3x15 @ 70kg\nGoblet Squat: 3x12 @ 18kg\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Burpees: 6 BW\n\nCore:\nPallof Press: 3x12/side @ 10kg' },
+  '2026-05-07': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x8 @ 50kg\nLeg Press: 4x8 @ 125kg\nWeighted Step Up: 4x8/leg @ 14kg/hand\nLeg Curl: 3x12 @ 45kg\nCalf Raise: 3x15 @ 70kg\nGoblet Squat: 3x12 @ 18kg\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Burpees: 6 BW\n\nCore:\nPallof Press: 3x12/side @ 10kg' },
   '2026-05-08': { type: 'run', title: 'Intervals - Sharpening', badge: '45-50 min', content: '🎯 เพิ่ม VO2max — วิ่งเร็วขึ้นที่ effort เท่าเดิม\n\nWarm-up: 10 min\nIntervals: 6x 400m @ slightly faster than race pace\nRest: 90s\nStay sharp!' },
   '2026-05-09': { type: 'mixed', title: 'Crucible Simulation 80%', badge: '75-90 min', content: '🎯 จำลอง Crucible — ฝึก pacing ทุก station ก่อนแข่งจริง\n\n80% Full Simulation:\nRun 500m → Row 35cal → Ski 35cal\nSeated Row heavy: 4x6 @ 55kg (Erg sub)\nSandbag Carry: 4x25m @ 20kg\nRope Lat Pulldown: 4x8 @ 55kg (Hoist sub)\nBurpees: 35 BW → Burden Run 350m\nLactic Legs: 15 squat + 15m lunge @ 30kg\nSled Push: 4x25m → Heavy Sled Pull: 4x30m' },
   '2026-05-11': { type: 'run', title: 'Easy Run', badge: '30-40 min', content: '🎯 ฟื้นตัว active — เลือดไหลเวียนช่วยซ่อมกล้ามเนื้อ\n\nRecovery run after simulation\nZone 2: 30-40 min' },
@@ -104,16 +104,16 @@ export const workouts = {
   '2026-05-31': { type: 'rest', title: 'REST 🛌', badge: '', content: '🎯 ฟื้นตัว — กล้ามเนื้อซ่อมแซมและแข็งแรงขึ้น\n\nวันพัก — นอนให้พอ กินให้ดี' },
   '2026-06-02': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nAM — Zone 2 Run: 30 min @ 6.5 km/h\n\nPM — BACK TO HYROX FOCUS!\nSeated Row: 4x10 @ 50kg 🔥\nLat Pulldown: 4x10 @ 55kg\nBack Extension: 3x12 + 15kg\nSled Pull: 5x30m\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Burpees: 6 BW\n\nCore:\nHanging Knee Raise: 3x10 BW' },
   '2026-06-03': { type: 'run', title: 'Zone 2 + SkiErg', badge: '60-70 min', content: '🎯 cardio + strength รวม — ประหยัดเวลา ได้ทั้งวิ่งและเวท\n\nZone 2 Run: 40 min\nSkiErg: 3x 500m @ race pace' },
-  '2026-06-04': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x10 @ 50kg\nLeg Press: 4x10 @ 130kg\nWeighted Step Up: 4x10/leg @ 14kg/hand\nLeg Curl: 3x12 @ 47.5kg\nWall Balls: 3x25 @ 9kg (overload — แข่ง 6kg)\nCalf Raise: 3x15 @ 72.5kg\nGoblet Squat: 3x12 @ 20kg\n\nEMOM 10 min:\nOdd min — Run: 100m\nEven min — Wall Balls: 10 @ 9kg\n\nCore:\nPallof Press: 3x12/side @ 10kg' },
+  '2026-06-04': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x10 @ 50kg\nLeg Press: 4x10 @ 130kg\nWeighted Step Up: 4x10/leg @ 14kg/hand\nLeg Curl: 3x15 @ 45kg\nWall Balls: 3x25 @ 9kg (overload — แข่ง 6kg)\nCalf Raise: 3x15 @ 72.5kg\nGoblet Squat: 3x12 @ 20kg\n\nEMOM 10 min:\nOdd min — Run: 100m\nEven min — Wall Balls: 10 @ 9kg\n\nCore:\nPallof Press: 3x12/side @ 10kg' },
   '2026-06-05': { type: 'run', title: 'Intervals', badge: '50-60 min', content: '🎯 เพิ่ม VO2max — วิ่งเร็วขึ้นที่ effort เท่าเดิม\n\nWarm-up: 10 min\n8x 400m @ sub-2 target pace (< 7:30/km)\nTreadmill: 10.5-11.0 km/h\nRest: 75s' },
   '2026-06-06': { type: 'strength', title: 'Hyrox Simulation Partial', badge: '60-75 min', content: '🎯 จำลองแข่ง — ฝึก pacing, transitions, nutrition strategy\n\nHyrox Partial Simulation:\nRun 1km → SkiErg: 1000m\nRun 1km → Sled Push: 3x30m\nRun 1km → Sled Pull: 3x30m\nRun 1km → Row: 1000m\n\nWall Balls: 3x25 @ 9kg (overload — แข่ง 6kg) (finisher)\nFocus on transitions!\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW\n\nTransition Drill:\nRun 400m → Farmer Carry 100m → Run 400m' },
   '2026-06-08': { type: 'run', title: 'Long Run', badge: '75-90 min', content: '🎯 สร้างความอดทน — ร่างกายชินกับวิ่งนานเหมือนวันแข่ง\n\nZone 2: 85-100 min\nBuilding for Hyrox distance' },
   '2026-06-07': { type: 'rest', title: 'REST 🛌', badge: '', content: '🎯 ฟื้นตัว — กล้ามเนื้อซ่อมแซมและแข็งแรงขึ้น\n\nวันพัก — นอนให้พอ กินให้ดี' },
 
   // Week continues...
-  '2026-06-09': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nAM — Zone 2 Run: 30 min @ 6.5 km/h\n\nPM:\nSeated Row: 5x5 @ 60kg 🔥\nLat Pulldown: 5x5 @ 65kg\nBack Extension: 3x12 + 17.5kg\nDead Hang: 3x max\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW' },
+  '2026-06-09': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nAM — Zone 2 Run: 30 min @ 6.5 km/h\n\nPM:\nSeated Row: 5x5 @ 60kg 🔥\nLat Pulldown: 5x5 @ 65kg\nBack Extension: 3x15 + 15kg\nDead Hang: 3x max\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW' },
   '2026-06-10': { type: 'run', title: 'Tempo Run + Upper', badge: '60-70 min', content: '🎯 threshold + strength — เพิ่มความเร็ววิ่งและแรงแขน\n\nTempo Run: 30 min @ 6:15-6:45/km\nTreadmill: 10.0-10.5 km/h\nHR: 155-165 bpm\n\nUpper:\nFace Pull: 3x15 @ 15kg\nRope Tricep Pushdown: 3x12 @ 25kg\nCable Curl: 3x12 @ 17.5kg' },
-  '2026-06-11': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x10 @ 52.5kg\nLeg Press: 4x10 @ 132.5kg\nWeighted Step Up: 4x10/leg @ 16kg/hand\nLunges 100m @ 30kg → Run 1km (cramp drill)\nCalf Raise: 3x15 @ 75kg\nGoblet Squat: 3x12 @ 20kg\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Lunges: 20m @ 30kg\n\nCore:\nHanging Knee Raise: 3x10 BW' },
+  '2026-06-11': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x12 @ 50kg\nLeg Press: 4x10 @ 132.5kg\nWeighted Step Up: 4x10/leg @ 16kg/hand\nLunges 100m @ 30kg → Run 1km (cramp drill)\nCalf Raise: 3x15 @ 75kg\nGoblet Squat: 3x12 @ 20kg\n\nEMOM 10 min:\nOdd min — Wall Balls: 12 @ 9kg\nEven min — Lunges: 20m @ 30kg\n\nCore:\nHanging Knee Raise: 3x10 BW' },
   '2026-06-12': { type: 'run', title: 'Intervals + Burpees', badge: '55-65 min', content: '🎯 anti-cramp drill — ฝึกร่างกายไม่ cramp หลัง station\n\nWarm-up: 10 min\n6x (400m + 10 burpees)\nRest: 90s\nAnti-cramp specific!' },
   '2026-06-13': { type: 'strength', title: 'Hyrox Stations', badge: '60-75 min', content: '🎯 ฝึก Hyrox stations เต็มน้ำหนัก — จับเวลาแต่ละ station\n\nFarmer Carry: 5x 200m @ 32kg/hand\nSled Push: 5x30m\nSled Pull: 5x30m\nWall Balls: 75 total @ 9kg (overload — แข่ง 6kg)\n\nCore:\nPallof Press: 3x12/side @ 10kg\n\nTransition Drill:\nRun 400m → Wall Balls 25 @ 9kg → Sled Push 25m → Run 400m' },
   '2026-06-15': { type: 'run', title: 'Long Run', badge: '80-95 min', content: '🎯 สร้างความอดทน — ร่างกายชินกับวิ่งนานเหมือนวันแข่ง\n\nZone 2: 90-105 min\nApproaching race distance!' },
@@ -129,9 +129,9 @@ export const workouts = {
   '2026-06-21': { type: 'rest', title: 'REST 🛌', badge: '', content: '🎯 ฟื้นตัว — กล้ามเนื้อซ่อมแซมและแข็งแรงขึ้น\n\nวันพัก — นอนให้พอ กินให้ดี' },
 
   // Peak weeks for Hyrox
-  '2026-06-23': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nAM — Zone 2 Run: 30 min @ 7.0 km/h\n\nPM:\nSeated Row: 5x4 @ 65kg 🔥\nLat Pulldown: 5x4 @ 70kg\nBack Extension: 3x10 + 22.5kg\n\nCore:\nHanging Knee Raise: 3x10 BW' },
+  '2026-06-23': { type: 'strength', title: 'Strength - Pull', badge: 'AM Run + 60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nAM — Zone 2 Run: 30 min @ 7.0 km/h\n\nPM:\nSeated Row: 5x4 @ 65kg 🔥\nLat Pulldown: 5x4 @ 70kg\nBack Extension: 3x12 + 20kg\n\nCore:\nHanging Knee Raise: 3x10 BW' },
   '2026-06-24': { type: 'run', title: 'Zone 2 + SkiErg', badge: '60-70 min', content: '🎯 cardio + strength รวม — ประหยัดเวลา ได้ทั้งวิ่งและเวท\n\nZone 2 Run: 45 min\nSkiErg: 1000m time trial' },
-  '2026-06-25': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x8 @ 57.5kg\nLeg Press: 4x8 @ 140kg\nWeighted Step Up: 4x8/leg @ 18kg/hand MILESTONE!\nWall Balls: 100 total @ 9kg (overload — แข่ง 6kg)\nCalf Raise: 3x15 @ 80kg\nGoblet Squat: 3x12 @ 22kg\n\nEMOM 12 min (rotate):\nMin 1 — Run: 200m\nMin 2 — Wall Balls: 12 @ 9kg\nMin 3 — Burpees: 8 BW\n\nCore:\nPallof Press: 3x12/side @ 10kg' },
+  '2026-06-25': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x10 @ 55kg\nLeg Press: 4x8 @ 140kg\nWeighted Step Up: 4x8/leg @ 18kg/hand MILESTONE!\nWall Balls: 100 total @ 9kg (overload — แข่ง 6kg)\nCalf Raise: 3x15 @ 80kg\nGoblet Squat: 3x12 @ 22kg\n\nEMOM 12 min (rotate):\nMin 1 — Run: 200m\nMin 2 — Wall Balls: 12 @ 9kg\nMin 3 — Burpees: 8 BW\n\nCore:\nPallof Press: 3x12/side @ 10kg' },
   '2026-06-26': { type: 'run', title: 'Intervals + Lunges', badge: '55-65 min', content: '🎯 anti-cramp drill — ฝึกร่างกายไม่ cramp หลัง station\n\n6x (400m + Lunges 50m @ 30kg)\nAnti-cramp drill\nRest: 90s' },
   '2026-06-27': { type: 'strength', title: 'Hyrox Stations (DELOAD)', badge: '70-80 min', content: '🎯 ฝึก Hyrox stations เต็มน้ำหนัก — จับเวลาแต่ละ station\n\nFull weight all stations:\nSled Push/Pull: 3x30m\nFarmer Carry: 2x200m @ 32kg/hand\nWall Balls: 2x25 @ 9kg (overload — แข่ง 6kg)\nBurpees: 2x20 BW\n\nCore:\nPlank: 3x45s BW + Dead Bug: 3x10/side BW\n\nTransition Drill:\nRun 400m → Burpees 20 → Farmer Carry 100m → Run 400m' },
   '2026-06-29': { type: 'run', title: 'Long Run', badge: '90-100 min', content: '🎯 สร้างความอดทน — ร่างกายชินกับวิ่งนานเหมือนวันแข่ง\n\nZone 2: 100-110 min\nMental prep!' },
@@ -147,9 +147,9 @@ export const workouts = {
   '2026-07-05': { type: 'rest', title: 'REST 🛌', badge: '', content: '🎯 ฟื้นตัว — กล้ามเนื้อซ่อมแซมและแข็งแรงขึ้น\n\nวันพัก — นอนให้พอ กินให้ดี' },
 
   // Continue July
-  '2026-07-08': { type: 'strength', title: 'Strength - Pull PEAK', badge: 'AM Run + 60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nAM — Zone 2 Run: 35 min @ 7.0 km/h\n\nPM:\nSeated Row: 5x3 @ 67.5kg 🔥\nLat Pulldown: 5x3 @ 72.5kg\nNearing targets!\n\nCore:\nHanging Knee Raise: 3x10 BW' },
+  '2026-07-08': { type: 'strength', title: 'Strength - Pull PEAK', badge: 'AM Run + 60-75 min', content: '🎯 สร้างแรงดึง — ช่วย Sled Pull, Row, SkiErg ทำได้เร็วขึ้น\n\nAM — Zone 2 Run: 35 min @ 7.0 km/h\n\nPM:\nSeated Row: 5x3 @ 65kg 🔥\nLat Pulldown: 5x3 @ 70kg\nNearing targets!\n\nCore:\nHanging Knee Raise: 3x10 BW' },
   '2026-07-09': { type: 'run', title: 'Tempo Run + Upper', badge: '60-70 min', content: '🎯 threshold + strength — เพิ่มความเร็ววิ่งและแรงแขน\n\nTempo Run: 30 min @ 6:00-6:30/km\nTreadmill: 10.0-10.5 km/h\nHR: 160-170 bpm\n\nUpper:\nChest Press: 3x10 @ 55kg\nFace Pull: 3x15 @ 15kg\nRope Tricep Pushdown: 3x12 @ 25kg\nCable Curl: 3x12 @ 17.5kg' },
-  '2026-07-10': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x6 @ 62.5kg\nLeg Press: 4x6 @ 150kg\nWeighted Step Up: 4x6/leg @ 20kg/hand\nWall Balls: 100 total @ 9kg (overload — แข่ง 6kg) — sets of 20-25; จับเวลา; ฝึก pacing\nCalf Raise: 3x15 @ 85kg\nGoblet Squat: 3x12 @ 24kg\n\nEMOM 10 min:\nOdd min — Burpees: 10 BW\nEven min — Run: 200m\n\nCore:\nPallof Press: 3x12/side @ 10kg' },
+  '2026-07-10': { type: 'strength', title: 'Strength - Push + Legs', badge: '60-75 min', content: '🎯 สร้างแรงขา+ดัน — ช่วย Sled Push, Lunges, Wall Balls\n\nChest Press: 4x8 @ 60kg\nLeg Press: 4x6 @ 150kg\nWeighted Step Up: 4x6/leg @ 20kg/hand\nWall Balls: 100 total @ 9kg (overload — แข่ง 6kg) — sets of 20-25; จับเวลา; ฝึก pacing\nCalf Raise: 3x15 @ 85kg\nGoblet Squat: 3x12 @ 24kg\n\nEMOM 10 min:\nOdd min — Burpees: 10 BW\nEven min — Run: 200m\n\nCore:\nPallof Press: 3x12/side @ 10kg' },
   '2026-07-11': { type: 'run', title: 'Race Pace Run', badge: '50-60 min', content: '🎯 ฝึก race pace — จำร่างกายให้ชินกับความเร็ววันแข่ง\n\n40 min @ sub-7:30/km pace\nTreadmill: 10.0 km/h\nPractice race running' },
   '2026-07-13': { type: 'mixed', title: 'Hyrox Full Simulation', badge: '120-150 min', content: '🎯 จำลองแข่ง — ฝึก pacing, transitions, nutrition strategy\n\nFULL HYROX SIMULATION!\n\nRun 1km → SkiErg: 1000m\nRun 1km → Sled Push: 4x25m\nRun 1km → Sled Pull: 4x25m\nRun 1km → Burpees: 80 BW\nRun 1km → Row: 1000m\nRun 1km → Farmer Carry: 200m @ 32kg/hand\nRun 1km → Lunges: 100m @ 30kg\nRun 1km → Wall Balls: 100 @ 9kg (overload — แข่ง 6kg)\n\nTarget: Under 2:15\n\nStrategy:\n- Electrolytes ทุก 2 stations\n- Burpees: sets of 10, pace!\n- Lunges: sodium shot ก่อน\n- Lap 8: ใจสู้ ไม่ cramp!' },
   '2026-07-12': { type: 'rest', title: 'REST', badge: 'Recovery', content: '🎯 ฟื้นตัว — กล้ามเนื้อซ่อมแซมและแข็งแรงขึ้น\n\nFull rest after simulation\nAssess performance' },
@@ -203,20 +203,20 @@ export const monthlyGoals = {
     title: 'Recovery & Base',
     goals: [
       { text: 'ฟื้นตัวหลัง Hyrox (2:28)', done: true },
-      { text: 'Seated Row กลับมา 37.5kg', done: false },
+      { text: 'Seated Row กลับมา 35kg', done: false },
       { text: 'Zone 2 Run 45-60 min สบาย', done: false },
     ],
-    keyLifts: { 'Seated Row': '35→37.5kg', 'Lat Pulldown': '40→42.5kg', 'Chest Press': '40kg', 'Step Up': '10kg/hand' },
+    keyLifts: { 'Seated Row': '35kg', 'Lat Pulldown': '40kg', 'Chest Press': '40kg', 'Step Up': '10kg/hand' },
   },
   3: { // April
     title: 'Base Building + Crucible Prep',
     goals: [
-      { text: 'Seated Row ถึง 47.5kg', done: false },
+      { text: 'Seated Row ถึง 45kg', done: false },
       { text: 'Long Run 75-90 min', done: false },
       { text: 'Crucible Simulation 50%', done: false },
       { text: 'Farmer Carry 28kg/hand', done: false },
     ],
-    keyLifts: { 'Seated Row': '40→47.5kg', 'Lat Pulldown': '45→52.5kg', 'Chest Press': '42.5→47.5kg', 'Step Up': '10→12kg/hand' },
+    keyLifts: { 'Seated Row': '40→45kg', 'Lat Pulldown': '45→50kg', 'Chest Press': '40→45kg', 'Step Up': '10→12kg/hand' },
   },
   4: { // May
     title: 'Peak + Crucible Race',
@@ -237,7 +237,7 @@ export const monthlyGoals = {
       { text: 'Hyrox Simulation 50%', done: false },
       { text: 'Sub-2 pace intervals 10x400m', done: false },
     ],
-    keyLifts: { 'Seated Row': '50→57.5kg', 'Lat Pulldown': '55→62.5kg', 'Chest Press': '50→57.5kg', 'Step Up': '14→18kg/hand' },
+    keyLifts: { 'Seated Row': '50→55kg', 'Lat Pulldown': '55→60kg', 'Chest Press': '50→55kg', 'Step Up': '14→18kg/hand' },
   },
   6: { // July
     title: 'Peak + Full Simulation',
@@ -249,7 +249,7 @@ export const monthlyGoals = {
       { text: 'Full Hyrox Simulation < 2:15', done: false },
       { text: 'Wall Balls 100 total @ 9kg — sets of 20-25; จับเวลา; ฝึก pacing', done: false },
     ],
-    keyLifts: { 'Seated Row': '60→62.5kg', 'Lat Pulldown': '65→67.5kg', 'Chest Press': '60→62.5kg', 'Step Up': '18→20kg/hand' },
+    keyLifts: { 'Seated Row': '60→65kg', 'Lat Pulldown': '65→70kg', 'Chest Press': '60→65kg', 'Step Up': '18→20kg/hand' },
   },
   7: { // August
     title: 'Taper → HYROX SUB-2:00!',
@@ -265,21 +265,21 @@ export const monthlyGoals = {
 // Weekly weight progression: key lifts per week (week start date → weights)
 export const weeklyProgression = [
   { week: '24-30 มี.ค.', row: 35, lat: 40, chest: 40, step: 10 },
-  { week: '31 มี.ค.-6 เม.ย.', row: 37.5, lat: 42.5, chest: 42.5, step: 10 },
+  { week: '31 มี.ค.-6 เม.ย.', row: 35, lat: 40, chest: 40, step: 10 },
   { week: '7-13 เม.ย.', row: null, lat: null, chest: null, step: null, note: 'No Gym Week' },
-  { week: '14-20 เม.ย.', row: 42.5, lat: 47.5, chest: 45, step: 12 },
-  { week: '21-27 เม.ย.', row: 45, lat: 50, chest: 47.5, step: 12 },
-  { week: '28 เม.ย.-4 พ.ค.', row: 47.5, lat: 52.5, chest: null, step: null, note: 'Sim week' },
+  { week: '14-20 เม.ย.', row: 40, lat: 45, chest: 45, step: 12 },
+  { week: '21-27 เม.ย.', row: 45, lat: 50, chest: 45, step: 12 },
+  { week: '28 เม.ย.-4 พ.ค.', row: 45, lat: 50, chest: null, step: null, note: 'Sim week' },
   { week: '5-11 พ.ค.', row: 50, lat: 55, chest: 50, step: 14, note: 'PEAK' },
   { week: '12-18 พ.ค.', row: 40, lat: 45, chest: 40, step: 10, note: 'Taper' },
   { week: '19-25 พ.ค.', row: null, lat: null, chest: null, step: null, note: 'Crucible Race' },
   { week: '26-31 พ.ค.', row: 35, lat: 40, chest: 40, step: 10, note: 'Recovery' },
   { week: '1-7 มิ.ย.', row: 50, lat: 55, chest: 50, step: 14 },
-  { week: '8-14 มิ.ย.', row: 52.5, lat: 57.5, chest: 52.5, step: 16 },
+  { week: '8-14 มิ.ย.', row: 50, lat: 55, chest: 50, step: 16 },
   { week: '15-21 มิ.ย.', row: 55, lat: 60, chest: 55, step: 16, note: 'MILESTONE' },
-  { week: '22-28 มิ.ย.', row: 57.5, lat: 62.5, chest: 57.5, step: 18 },
+  { week: '22-28 มิ.ย.', row: 55, lat: 60, chest: 55, step: 18 },
   { week: '29 มิ.ย.-5 ก.ค.', row: 60, lat: 65, chest: 60, step: 18, note: 'TARGET' },
-  { week: '6-12 ก.ค.', row: 62.5, lat: 67.5, chest: 62.5, step: 20 },
+  { week: '6-12 ก.ค.', row: 60, lat: 65, chest: 60, step: 20 },
   { week: '13-19 ก.ค.', row: null, lat: null, chest: null, step: null, note: 'Recovery' },
   { week: '20-26 ก.ค.', row: 55, lat: 60, chest: null, step: null, note: 'Maintain' },
   { week: '27 ก.ค.-2 ส.ค.', row: 60, lat: 65, chest: 60, step: 20, note: 'Final Build' },
