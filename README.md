@@ -105,6 +105,7 @@ Edit `src/workoutData.js`:
   - Apr 30 (Sim 50%): was missing entirely — added `1X (20 squat + 20m lunge) @ 25kg`
   - May 9 (Sim 80%): was `15 squat + 15m lunge` — fixed to `1X (20 squat + 20m lunge) @ 30kg (overload)`
 - Fixed **Zone 2 long run pacing** (Apr 20, 27, May 4): treadmill was incorrectly `9.0-9.5 km/h` — corrected to `6.5-7.0 km/h` with pace `8:30-9:00 /km` (based on HR data: 150+ at 8 km/h)
+- Added **Dead Hang: 3x max BW** to all Pull days (17 total) — grip strength for Sled Pull + Farmer Carry. Baseline: ~20 sec/set
 - Added **Sled Push/Pull weights** to all entries — Push @ 175kg, Pull @ 120kg (smooth surface overload vs race 152/103kg). Gym sled is ~10-20kg, gym floor is smoother than race carpet so extra weight compensates. Hyrox cramp issue was partly caused by going too hard on Sled Push on high-friction carpet.
 
 ### Notes for Future Sessions
