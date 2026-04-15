@@ -245,8 +245,10 @@ function getWeekStart(dateStr) {
 }
 
 function App() {
-  const [currentDate, setCurrentDate] = useState(new Date(2026, 2, 1));
-  const [selectedDate, setSelectedDate] = useState('2026-03-24');
+  const today = new Date();
+  const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+  const [currentDate, setCurrentDate] = useState(new Date(today.getFullYear(), today.getMonth(), 1));
+  const [selectedDate, setSelectedDate] = useState(todayStr);
   const [completedWorkouts, setCompletedWorkouts] = useState(() => {
     const saved = localStorage.getItem('completedWorkouts');
     return saved ? JSON.parse(saved) : {};
@@ -256,7 +258,7 @@ function App() {
     return saved ? JSON.parse(saved) : {};
   });
   const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
-  const [weekStart, setWeekStart] = useState(() => getWeekStart('2026-03-24'));
+  const [weekStart, setWeekStart] = useState(() => getWeekStart(todayStr));
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 700);
@@ -310,7 +312,7 @@ function App() {
   // Calculate streak
   const streak = useMemo(() => {
     let count = 0;
-    const d = new Date('2026-03-24T12:00:00');
+    const d = new Date(todayStr + 'T12:00:00');
     while (true) {
       d.setDate(d.getDate() - 1);
       const ds = formatDateStr(d.getFullYear(), d.getMonth(), d.getDate());
@@ -332,7 +334,7 @@ function App() {
   const checkedCount = parsedExercises.filter(e => e.type === 'exercise' && checkedExercises[`${selectedDate}-${e.id}`]).length;
 
   const renderWeekView = () => {
-    const today = '2026-03-24';
+    const today = todayStr;
     const days = [];
     for (let i = 0; i < 7; i++) {
       const d = new Date(weekStart);
@@ -379,7 +381,7 @@ function App() {
     const month = currentDate.getMonth();
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const today = '2026-03-24';
+    const today = todayStr;
 
     const days = [];
 
