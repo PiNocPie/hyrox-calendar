@@ -322,7 +322,7 @@ function App() {
       if (completedWorkouts[ds]) { count++; } else { break; }
     }
     return count;
-  }, [completedWorkouts]);
+  }, [completedWorkouts, todayStr]);
 
   const parsedExercises = useMemo(() => {
     if (!selectedWorkout) return [];
